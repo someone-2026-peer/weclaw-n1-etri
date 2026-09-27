@@ -1,0 +1,4512 @@
+{
+  "summary": {
+    "annot_model": "qwen-max",
+    "n_total": 500,
+    "n_annotated": 500,
+    "raw_agreement": 98.8,
+    "cohen_kappa": 0.987,
+    "n_disagree": 6
+  },
+  "queries": [
+    {
+      "id": 1,
+      "q": "现在几点了？",
+      "ref": "datetime_tool",
+      "desc": "获取当前日期、时间、星期、几号",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 11,
+      "annot2_ref": "datetime_tool"
+    },
+    {
+      "id": 2,
+      "q": "今天星期几？",
+      "ref": "datetime_tool",
+      "desc": "获取当前日期、时间、星期、几号",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 11,
+      "annot2_ref": "datetime_tool"
+    },
+    {
+      "id": 3,
+      "q": "今天几号？",
+      "ref": "datetime_tool",
+      "desc": "获取当前日期、时间、星期、几号",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 11,
+      "annot2_ref": "datetime_tool"
+    },
+    {
+      "id": 4,
+      "q": "现在什么时间？",
+      "ref": "datetime_tool",
+      "desc": "获取当前日期、时间、星期、几号",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 11,
+      "annot2_ref": "datetime_tool"
+    },
+    {
+      "id": 5,
+      "q": "今天周几？",
+      "ref": "datetime_tool",
+      "desc": "获取当前日期、时间、星期、几号",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "datetime_tool"
+    },
+    {
+      "id": 6,
+      "q": "现在几点钟？",
+      "ref": "datetime_tool",
+      "desc": "获取当前日期、时间、星期、几号",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 11,
+      "annot2_ref": "datetime_tool"
+    },
+    {
+      "id": 7,
+      "q": "今天日期是啥？",
+      "ref": "datetime_tool",
+      "desc": "获取当前日期、时间、星期、几号",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 11,
+      "annot2_ref": "datetime_tool"
+    },
+    {
+      "id": 8,
+      "q": "现在几时几分？",
+      "ref": "datetime_tool",
+      "desc": "获取当前日期、时间、星期、几号",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "datetime_tool"
+    },
+    {
+      "id": 9,
+      "q": "今天几月几号？",
+      "ref": "datetime_tool",
+      "desc": "获取当前日期、时间、星期、几号",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 11,
+      "annot2_ref": "datetime_tool"
+    },
+    {
+      "id": 10,
+      "q": "现在时间报一下。",
+      "ref": "datetime_tool",
+      "desc": "获取当前日期、时间、星期、几号",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 11,
+      "annot2_ref": "datetime_tool"
+    },
+    {
+      "id": 11,
+      "q": "几点了现在？",
+      "ref": "datetime_tool",
+      "desc": "获取当前日期、时间、星期、几号",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 11,
+      "annot2_ref": "datetime_tool"
+    },
+    {
+      "id": 12,
+      "q": "今天几号了？",
+      "ref": "datetime_tool",
+      "desc": "获取当前日期、时间、星期、几号",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 11,
+      "annot2_ref": "datetime_tool"
+    },
+    {
+      "id": 13,
+      "q": "今天周几来着？",
+      "ref": "datetime_tool",
+      "desc": "获取当前日期、时间、星期、几号",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "datetime_tool"
+    },
+    {
+      "id": 14,
+      "q": "现在是什么时候？",
+      "ref": "datetime_tool",
+      "desc": "获取当前日期、时间、星期、几号",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "datetime_tool"
+    },
+    {
+      "id": 15,
+      "q": "今天是什么日期？",
+      "ref": "datetime_tool",
+      "desc": "获取当前日期、时间、星期、几号",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "datetime_tool"
+    },
+    {
+      "id": 16,
+      "q": "告诉我现在几点。",
+      "ref": "datetime_tool",
+      "desc": "获取当前日期、时间、星期、几号",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 11,
+      "annot2_ref": "datetime_tool"
+    },
+    {
+      "id": 17,
+      "q": "查一下今天星期几。",
+      "ref": "datetime_tool",
+      "desc": "获取当前日期、时间、星期、几号",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 11,
+      "annot2_ref": "datetime_tool"
+    },
+    {
+      "id": 18,
+      "q": "报一下现在时间。",
+      "ref": "datetime_tool",
+      "desc": "获取当前日期、时间、星期、几号",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 11,
+      "annot2_ref": "datetime_tool"
+    },
+    {
+      "id": 19,
+      "q": "今天几月几日？",
+      "ref": "datetime_tool",
+      "desc": "获取当前日期、时间、星期、几号",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "datetime_tool"
+    },
+    {
+      "id": 20,
+      "q": "现在几点几分几秒？",
+      "ref": "datetime_tool",
+      "desc": "获取当前日期、时间、星期、几号",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 11,
+      "annot2_ref": "datetime_tool"
+    },
+    {
+      "id": 21,
+      "q": "三加五等于几",
+      "ref": "calculator",
+      "desc": "做数学计算、算账、四则运算",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "calculator"
+    },
+    {
+      "id": 22,
+      "q": "十二乘八是多少",
+      "ref": "calculator",
+      "desc": "做数学计算、算账、四则运算",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "calculator"
+    },
+    {
+      "id": 23,
+      "q": "九十九除以三得多少",
+      "ref": "calculator",
+      "desc": "做数学计算、算账、四则运算",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "calculator"
+    },
+    {
+      "id": 24,
+      "q": "一百减三十七等于几",
+      "ref": "calculator",
+      "desc": "做数学计算、算账、四则运算",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "calculator"
+    },
+    {
+      "id": 25,
+      "q": "帮我算下五十六加四十三",
+      "ref": "calculator",
+      "desc": "做数学计算、算账、四则运算",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "calculator"
+    },
+    {
+      "id": 26,
+      "q": "七十五减二十八是多少",
+      "ref": "calculator",
+      "desc": "做数学计算、算账、四则运算",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "calculator"
+    },
+    {
+      "id": 27,
+      "q": "二百五十六除以八等于几",
+      "ref": "calculator",
+      "desc": "做数学计算、算账、四则运算",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "calculator"
+    },
+    {
+      "id": 28,
+      "q": "四十六加五十四再减二十",
+      "ref": "calculator",
+      "desc": "做数学计算、算账、四则运算",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "calculator"
+    },
+    {
+      "id": 29,
+      "q": "三十五的六倍是多少",
+      "ref": "calculator",
+      "desc": "做数学计算、算账、四则运算",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "calculator"
+    },
+    {
+      "id": 30,
+      "q": "八十八的一半是多少",
+      "ref": "calculator",
+      "desc": "做数学计算、算账、四则运算",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "calculator"
+    },
+    {
+      "id": 31,
+      "q": "十二个七相加一共多少",
+      "ref": "calculator",
+      "desc": "做数学计算、算账、四则运算",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "calculator"
+    },
+    {
+      "id": 32,
+      "q": "一百里面有几个五",
+      "ref": "calculator",
+      "desc": "做数学计算、算账、四则运算",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "calculator"
+    },
+    {
+      "id": 33,
+      "q": "三块五加七块八是多少",
+      "ref": "calculator",
+      "desc": "做数学计算、算账、四则运算",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "calculator"
+    },
+    {
+      "id": 34,
+      "q": "一百块打八折多少钱",
+      "ref": "calculator",
+      "desc": "做数学计算、算账、四则运算",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "calculator"
+    },
+    {
+      "id": 35,
+      "q": "九乘九再加十一等于几",
+      "ref": "calculator",
+      "desc": "做数学计算、算账、四则运算",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "calculator"
+    },
+    {
+      "id": 36,
+      "q": "三百六十分成六份每份多少",
+      "ref": "calculator",
+      "desc": "做数学计算、算账、四则运算",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "calculator"
+    },
+    {
+      "id": 37,
+      "q": "七百二十除以九等于几",
+      "ref": "calculator",
+      "desc": "做数学计算、算账、四则运算",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "calculator"
+    },
+    {
+      "id": 38,
+      "q": "六十七加八十九减四十五",
+      "ref": "calculator",
+      "desc": "做数学计算、算账、四则运算",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "calculator"
+    },
+    {
+      "id": 39,
+      "q": "二十五个四是多少",
+      "ref": "calculator",
+      "desc": "做数学计算、算账、四则运算",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "calculator"
+    },
+    {
+      "id": 40,
+      "q": "一千减三百八十七等于几",
+      "ref": "calculator",
+      "desc": "做数学计算、算账、四则运算",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "calculator"
+    },
+    {
+      "id": 41,
+      "q": "打开百度首页",
+      "ref": "browser",
+      "desc": "打开网页、上网浏览、访问网站看内容",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "browser"
+    },
+    {
+      "id": 42,
+      "q": "看看微博热搜榜",
+      "ref": "browser",
+      "desc": "打开网页、上网浏览、访问网站看内容",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "browser"
+    },
+    {
+      "id": 43,
+      "q": "上知乎看看热榜",
+      "ref": "browser",
+      "desc": "打开网页、上网浏览、访问网站看内容",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "browser"
+    },
+    {
+      "id": 44,
+      "q": "打开淘宝看物流",
+      "ref": "browser",
+      "desc": "打开网页、上网浏览、访问网站看内容",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "browser"
+    },
+    {
+      "id": 45,
+      "q": "去京东查订单",
+      "ref": "browser",
+      "desc": "打开网页、上网浏览、访问网站看内容",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "browser"
+    },
+    {
+      "id": 46,
+      "q": "上小红书搜攻略",
+      "ref": "browser",
+      "desc": "打开网页、上网浏览、访问网站看内容",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "browser"
+    },
+    {
+      "id": 47,
+      "q": "打开豆瓣看评分",
+      "ref": "browser",
+      "desc": "打开网页、上网浏览、访问网站看内容",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "browser"
+    },
+    {
+      "id": 48,
+      "q": "去哔哩哔哩看视频",
+      "ref": "browser",
+      "desc": "打开网页、上网浏览、访问网站看内容",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 18,
+      "annot2_ref": "bilibili_search"
+    },
+    {
+      "id": 49,
+      "q": "打开腾讯视频看剧",
+      "ref": "browser",
+      "desc": "打开网页、上网浏览、访问网站看内容",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "app_control"
+    },
+    {
+      "id": 50,
+      "q": "上优酷找个电影",
+      "ref": "browser",
+      "desc": "打开网页、上网浏览、访问网站看内容",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "browser"
+    },
+    {
+      "id": 51,
+      "q": "去爱奇艺看综艺",
+      "ref": "browser",
+      "desc": "打开网页、上网浏览、访问网站看内容",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "app_control"
+    },
+    {
+      "id": 52,
+      "q": "打开网易新闻看头条",
+      "ref": "browser",
+      "desc": "打开网页、上网浏览、访问网站看内容",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 9,
+      "annot2_ref": "browser"
+    },
+    {
+      "id": 53,
+      "q": "上新浪新闻看热点",
+      "ref": "browser",
+      "desc": "打开网页、上网浏览、访问网站看内容",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 9,
+      "annot2_ref": "browser"
+    },
+    {
+      "id": 54,
+      "q": "去凤凰网看资讯",
+      "ref": "browser",
+      "desc": "打开网页、上网浏览、访问网站看内容",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "browser"
+    },
+    {
+      "id": 55,
+      "q": "打开央视网看节目",
+      "ref": "browser",
+      "desc": "打开网页、上网浏览、访问网站看内容",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "browser"
+    },
+    {
+      "id": 56,
+      "q": "上人民网看新闻",
+      "ref": "browser",
+      "desc": "打开网页、上网浏览、访问网站看内容",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 9,
+      "annot2_ref": "browser"
+    },
+    {
+      "id": 57,
+      "q": "去新华网看要闻",
+      "ref": "browser",
+      "desc": "打开网页、上网浏览、访问网站看内容",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "browser"
+    },
+    {
+      "id": 58,
+      "q": "打开学校官网看看",
+      "ref": "browser",
+      "desc": "打开网页、上网浏览、访问网站看内容",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "browser"
+    },
+    {
+      "id": 59,
+      "q": "上政府网查政策",
+      "ref": "browser",
+      "desc": "打开网页、上网浏览、访问网站看内容",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "browser"
+    },
+    {
+      "id": 60,
+      "q": "去汽车之家看车",
+      "ref": "browser",
+      "desc": "打开网页、上网浏览、访问网站看内容",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "browser"
+    },
+    {
+      "id": 61,
+      "q": "把这段字复制一下",
+      "ref": "clipboard",
+      "desc": "复制、粘贴、拷贝一段文字或图片",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "clipboard"
+    },
+    {
+      "id": 62,
+      "q": "帮我拷贝这句话",
+      "ref": "clipboard",
+      "desc": "复制、粘贴、拷贝一段文字或图片",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "clipboard"
+    },
+    {
+      "id": 63,
+      "q": "粘贴到这里",
+      "ref": "clipboard",
+      "desc": "复制、粘贴、拷贝一段文字或图片",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "clipboard"
+    },
+    {
+      "id": 64,
+      "q": "把刚才复制的贴过来",
+      "ref": "clipboard",
+      "desc": "复制、粘贴、拷贝一段文字或图片",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "clipboard"
+    },
+    {
+      "id": 65,
+      "q": "复制这张图片",
+      "ref": "clipboard",
+      "desc": "复制、粘贴、拷贝一段文字或图片",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "clipboard"
+    },
+    {
+      "id": 66,
+      "q": "把选中的内容拷下来",
+      "ref": "clipboard",
+      "desc": "复制、粘贴、拷贝一段文字或图片",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "clipboard"
+    },
+    {
+      "id": 67,
+      "q": "这句能拷一下吗",
+      "ref": "clipboard",
+      "desc": "复制、粘贴、拷贝一段文字或图片",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "clipboard"
+    },
+    {
+      "id": 68,
+      "q": "把这条消息复制了",
+      "ref": "clipboard",
+      "desc": "复制、粘贴、拷贝一段文字或图片",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "clipboard"
+    },
+    {
+      "id": 69,
+      "q": "把图片拷一下",
+      "ref": "clipboard",
+      "desc": "复制、粘贴、拷贝一段文字或图片",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "clipboard"
+    },
+    {
+      "id": 70,
+      "q": "把刚才那段字贴到这儿",
+      "ref": "clipboard",
+      "desc": "复制、粘贴、拷贝一段文字或图片",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "clipboard"
+    },
+    {
+      "id": 71,
+      "q": "复制一下选中的部分",
+      "ref": "clipboard",
+      "desc": "复制、粘贴、拷贝一段文字或图片",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "clipboard"
+    },
+    {
+      "id": 72,
+      "q": "把这段文字拷走",
+      "ref": "clipboard",
+      "desc": "复制、粘贴、拷贝一段文字或图片",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "clipboard"
+    },
+    {
+      "id": 73,
+      "q": "把这张图粘到文档里",
+      "ref": "clipboard",
+      "desc": "复制、粘贴、拷贝一段文字或图片",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 8,
+      "annot2_ref": "clipboard"
+    },
+    {
+      "id": 74,
+      "q": "粘贴刚才那张图",
+      "ref": "clipboard",
+      "desc": "复制、粘贴、拷贝一段文字或图片",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "clipboard"
+    },
+    {
+      "id": 75,
+      "q": "帮我把这段内容拷贝一下",
+      "ref": "clipboard",
+      "desc": "复制、粘贴、拷贝一段文字或图片",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "clipboard"
+    },
+    {
+      "id": 76,
+      "q": "把刚拷的那句话放这儿",
+      "ref": "clipboard",
+      "desc": "复制、粘贴、拷贝一段文字或图片",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "clipboard"
+    },
+    {
+      "id": 77,
+      "q": "这段字帮我复制下",
+      "ref": "clipboard",
+      "desc": "复制、粘贴、拷贝一段文字或图片",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "clipboard"
+    },
+    {
+      "id": 78,
+      "q": "把上面的文字复制下来",
+      "ref": "clipboard",
+      "desc": "复制、粘贴、拷贝一段文字或图片",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "clipboard"
+    },
+    {
+      "id": 79,
+      "q": "把图复制好放那里",
+      "ref": "clipboard",
+      "desc": "复制、粘贴、拷贝一段文字或图片",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "clipboard"
+    },
+    {
+      "id": 80,
+      "q": "把复制好的内容放出来",
+      "ref": "clipboard",
+      "desc": "复制、粘贴、拷贝一段文字或图片",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "clipboard"
+    },
+    {
+      "id": 81,
+      "q": "提醒我十分钟后开会",
+      "ref": "notify",
+      "desc": "弹一个系统通知/提醒",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 11,
+      "annot2_ref": "notify"
+    },
+    {
+      "id": 82,
+      "q": "到点了喊我一声",
+      "ref": "notify",
+      "desc": "弹一个系统通知/提醒",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "notify"
+    },
+    {
+      "id": 83,
+      "q": "弹个提醒让我别忘带钥匙",
+      "ref": "notify",
+      "desc": "弹一个系统通知/提醒",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 11,
+      "annot2_ref": "notify"
+    },
+    {
+      "id": 84,
+      "q": "五分钟后提醒我喝水",
+      "ref": "notify",
+      "desc": "弹一个系统通知/提醒",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 11,
+      "annot2_ref": "notify"
+    },
+    {
+      "id": 85,
+      "q": "帮我提个醒，十分钟后出发",
+      "ref": "notify",
+      "desc": "弹一个系统通知/提醒",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "notify"
+    },
+    {
+      "id": 86,
+      "q": "现在提醒我去拿快递",
+      "ref": "notify",
+      "desc": "弹一个系统通知/提醒",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 11,
+      "annot2_ref": "notify"
+    },
+    {
+      "id": 87,
+      "q": "屏幕上给我弹个提醒",
+      "ref": "notify",
+      "desc": "弹一个系统通知/提醒",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "notify"
+    },
+    {
+      "id": 88,
+      "q": "该吃药了，提醒我一下",
+      "ref": "notify",
+      "desc": "弹一个系统通知/提醒",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 11,
+      "annot2_ref": "notify"
+    },
+    {
+      "id": 89,
+      "q": "下午三点叫我交报告",
+      "ref": "notify",
+      "desc": "弹一个系统通知/提醒",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 8,
+      "annot2_ref": "notify"
+    },
+    {
+      "id": 90,
+      "q": "提醒我关火，别忘了",
+      "ref": "notify",
+      "desc": "弹一个系统通知/提醒",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 11,
+      "annot2_ref": "notify"
+    },
+    {
+      "id": 91,
+      "q": "过会儿提醒我接孩子",
+      "ref": "notify",
+      "desc": "弹一个系统通知/提醒",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 11,
+      "annot2_ref": "notify"
+    },
+    {
+      "id": 92,
+      "q": "要下雨了，提醒我收衣服",
+      "ref": "notify",
+      "desc": "弹一个系统通知/提醒",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 11,
+      "annot2_ref": "notify"
+    },
+    {
+      "id": 93,
+      "q": "提醒我晚上给妈妈打电话",
+      "ref": "notify",
+      "desc": "弹一个系统通知/提醒",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 11,
+      "annot2_ref": "notify"
+    },
+    {
+      "id": 94,
+      "q": "十一点提醒我点外卖",
+      "ref": "notify",
+      "desc": "弹一个系统通知/提醒",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 11,
+      "annot2_ref": "notify"
+    },
+    {
+      "id": 95,
+      "q": "六点半提醒我叫孩子起床",
+      "ref": "notify",
+      "desc": "弹一个系统通知/提醒",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 11,
+      "annot2_ref": "notify"
+    },
+    {
+      "id": 96,
+      "q": "弹个消息提醒我交房租",
+      "ref": "notify",
+      "desc": "弹一个系统通知/提醒",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 11,
+      "annot2_ref": "notify"
+    },
+    {
+      "id": 97,
+      "q": "出门前提醒我带伞",
+      "ref": "notify",
+      "desc": "弹一个系统通知/提醒",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 11,
+      "annot2_ref": "notify"
+    },
+    {
+      "id": 98,
+      "q": "明天上午九点提醒我体检",
+      "ref": "notify",
+      "desc": "弹一个系统通知/提醒",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 11,
+      "annot2_ref": "notify"
+    },
+    {
+      "id": 99,
+      "q": "现在弹个提醒让我休息",
+      "ref": "notify",
+      "desc": "弹一个系统通知/提醒",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 11,
+      "annot2_ref": "notify"
+    },
+    {
+      "id": 100,
+      "q": "提醒我半小时后关电视",
+      "ref": "notify",
+      "desc": "弹一个系统通知/提醒",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 11,
+      "annot2_ref": "notify"
+    },
+    {
+      "id": 101,
+      "q": "打开微信",
+      "ref": "app_control",
+      "desc": "打开/启动/关闭某个桌面应用程序",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 11,
+      "annot2_ref": "app_control"
+    },
+    {
+      "id": 102,
+      "q": "帮我启动计算器",
+      "ref": "app_control",
+      "desc": "打开/启动/关闭某个桌面应用程序",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 11,
+      "annot2_ref": "app_control"
+    },
+    {
+      "id": 103,
+      "q": "把浏览器关掉",
+      "ref": "app_control",
+      "desc": "打开/启动/关闭某个桌面应用程序",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 9,
+      "annot2_ref": "app_control"
+    },
+    {
+      "id": 104,
+      "q": "能打开记事本吗",
+      "ref": "app_control",
+      "desc": "打开/启动/关闭某个桌面应用程序",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 12,
+      "annot2_ref": "app_control"
+    },
+    {
+      "id": 105,
+      "q": "退出音乐播放器",
+      "ref": "app_control",
+      "desc": "打开/启动/关闭某个桌面应用程序",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "app_control"
+    },
+    {
+      "id": 106,
+      "q": "打开画图",
+      "ref": "app_control",
+      "desc": "打开/启动/关闭某个桌面应用程序",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 12,
+      "annot2_ref": "app_control"
+    },
+    {
+      "id": 107,
+      "q": "关一下日历",
+      "ref": "app_control",
+      "desc": "打开/启动/关闭某个桌面应用程序",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "app_control"
+    },
+    {
+      "id": 108,
+      "q": "帮我打开邮件",
+      "ref": "app_control",
+      "desc": "打开/启动/关闭某个桌面应用程序",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 6,
+      "annot2_ref": "email"
+    },
+    {
+      "id": 109,
+      "q": "把视频播放器关了",
+      "ref": "app_control",
+      "desc": "打开/启动/关闭某个桌面应用程序",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "app_control"
+    },
+    {
+      "id": 110,
+      "q": "启动任务管理器",
+      "ref": "app_control",
+      "desc": "打开/启动/关闭某个桌面应用程序",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "app_control"
+    },
+    {
+      "id": 111,
+      "q": "打开一下系统设置",
+      "ref": "app_control",
+      "desc": "打开/启动/关闭某个桌面应用程序",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 12,
+      "annot2_ref": "app_control"
+    },
+    {
+      "id": 112,
+      "q": "能帮我关闭相机吗",
+      "ref": "app_control",
+      "desc": "打开/启动/关闭某个桌面应用程序",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "app_control"
+    },
+    {
+      "id": 113,
+      "q": "打开文件管理器",
+      "ref": "app_control",
+      "desc": "打开/启动/关闭某个桌面应用程序",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "app_control"
+    },
+    {
+      "id": 114,
+      "q": "把微信退了吧",
+      "ref": "app_control",
+      "desc": "打开/启动/关闭某个桌面应用程序",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 11,
+      "annot2_ref": "app_control"
+    },
+    {
+      "id": 115,
+      "q": "帮我打开音乐播放器",
+      "ref": "app_control",
+      "desc": "打开/启动/关闭某个桌面应用程序",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "app_control"
+    },
+    {
+      "id": 116,
+      "q": "计算器关掉",
+      "ref": "app_control",
+      "desc": "打开/启动/关闭某个桌面应用程序",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 11,
+      "annot2_ref": "app_control"
+    },
+    {
+      "id": 117,
+      "q": "打开一下浏览器",
+      "ref": "app_control",
+      "desc": "打开/启动/关闭某个桌面应用程序",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 9,
+      "annot2_ref": "browser"
+    },
+    {
+      "id": 118,
+      "q": "退出记事本",
+      "ref": "app_control",
+      "desc": "打开/启动/关闭某个桌面应用程序",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 12,
+      "annot2_ref": "app_control"
+    },
+    {
+      "id": 119,
+      "q": "能启动画图吗",
+      "ref": "app_control",
+      "desc": "打开/启动/关闭某个桌面应用程序",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "app_control"
+    },
+    {
+      "id": 120,
+      "q": "把邮件关掉",
+      "ref": "app_control",
+      "desc": "打开/启动/关闭某个桌面应用程序",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 6,
+      "annot2_ref": "app_control"
+    },
+    {
+      "id": 121,
+      "q": "茅台今天涨了没",
+      "ref": "stock_query",
+      "desc": "查询股票价格、行情、涨跌",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "stock_query"
+    },
+    {
+      "id": 122,
+      "q": "比亚迪股价多少",
+      "ref": "stock_query",
+      "desc": "查询股票价格、行情、涨跌",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 8,
+      "annot2_ref": "stock_query"
+    },
+    {
+      "id": 123,
+      "q": "宁德时代现在啥行情",
+      "ref": "stock_query",
+      "desc": "查询股票价格、行情、涨跌",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 8,
+      "annot2_ref": "stock_query"
+    },
+    {
+      "id": 124,
+      "q": "上证指数现在多少点",
+      "ref": "stock_query",
+      "desc": "查询股票价格、行情、涨跌",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "stock_query"
+    },
+    {
+      "id": 125,
+      "q": "腾讯今天涨还是跌",
+      "ref": "stock_query",
+      "desc": "查询股票价格、行情、涨跌",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "stock_query"
+    },
+    {
+      "id": 126,
+      "q": "帮我看看五粮液股价",
+      "ref": "stock_query",
+      "desc": "查询股票价格、行情、涨跌",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 8,
+      "annot2_ref": "stock_query"
+    },
+    {
+      "id": 127,
+      "q": "平安银行今天涨没涨",
+      "ref": "stock_query",
+      "desc": "查询股票价格、行情、涨跌",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "stock_query"
+    },
+    {
+      "id": 128,
+      "q": "中石油现在多少钱一股",
+      "ref": "stock_query",
+      "desc": "查询股票价格、行情、涨跌",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "stock_query"
+    },
+    {
+      "id": 129,
+      "q": "美团股价现在多少",
+      "ref": "stock_query",
+      "desc": "查询股票价格、行情、涨跌",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 8,
+      "annot2_ref": "stock_query"
+    },
+    {
+      "id": 130,
+      "q": "小米集团今天行情咋样",
+      "ref": "stock_query",
+      "desc": "查询股票价格、行情、涨跌",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 8,
+      "annot2_ref": "stock_query"
+    },
+    {
+      "id": 131,
+      "q": "招商银行今天跌了吗",
+      "ref": "stock_query",
+      "desc": "查询股票价格、行情、涨跌",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "stock_query"
+    },
+    {
+      "id": 132,
+      "q": "隆基绿能今天涨跌",
+      "ref": "stock_query",
+      "desc": "查询股票价格、行情、涨跌",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 8,
+      "annot2_ref": "stock_query"
+    },
+    {
+      "id": 133,
+      "q": "万科现在股价多少",
+      "ref": "stock_query",
+      "desc": "查询股票价格、行情、涨跌",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 8,
+      "annot2_ref": "stock_query"
+    },
+    {
+      "id": 134,
+      "q": "京东今天涨了没",
+      "ref": "stock_query",
+      "desc": "查询股票价格、行情、涨跌",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "stock_query"
+    },
+    {
+      "id": 135,
+      "q": "阿里今天股价多少",
+      "ref": "stock_query",
+      "desc": "查询股票价格、行情、涨跌",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 8,
+      "annot2_ref": "stock_query"
+    },
+    {
+      "id": 136,
+      "q": "拼多多今天啥行情",
+      "ref": "stock_query",
+      "desc": "查询股票价格、行情、涨跌",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 8,
+      "annot2_ref": "stock_query"
+    },
+    {
+      "id": 137,
+      "q": "工商银行今天多少钱",
+      "ref": "stock_query",
+      "desc": "查询股票价格、行情、涨跌",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "stock_query"
+    },
+    {
+      "id": 138,
+      "q": "海天味业今天涨了没",
+      "ref": "stock_query",
+      "desc": "查询股票价格、行情、涨跌",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "stock_query"
+    },
+    {
+      "id": 139,
+      "q": "中国平安股价咋样",
+      "ref": "stock_query",
+      "desc": "查询股票价格、行情、涨跌",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 8,
+      "annot2_ref": "stock_query"
+    },
+    {
+      "id": 140,
+      "q": "沪深300今天行情如何",
+      "ref": "stock_query",
+      "desc": "查询股票价格、行情、涨跌",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 8,
+      "annot2_ref": "stock_query"
+    },
+    {
+      "id": 141,
+      "q": "帮我查查这家公司什么来头",
+      "ref": "enterprise_query",
+      "desc": "查某家公司的工商注册信息/背景",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "enterprise_query"
+    },
+    {
+      "id": 142,
+      "q": "这家公司靠谱不",
+      "ref": "enterprise_query",
+      "desc": "查某家公司的工商注册信息/背景",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "enterprise_query"
+    },
+    {
+      "id": 143,
+      "q": "查一下这家公司的底细",
+      "ref": "enterprise_query",
+      "desc": "查某家公司的工商注册信息/背景",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "enterprise_query"
+    },
+    {
+      "id": 144,
+      "q": "这公司是谁开的",
+      "ref": "enterprise_query",
+      "desc": "查某家公司的工商注册信息/背景",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "enterprise_query"
+    },
+    {
+      "id": 145,
+      "q": "公司老板是谁呀",
+      "ref": "enterprise_query",
+      "desc": "查某家公司的工商注册信息/背景",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "enterprise_query"
+    },
+    {
+      "id": 146,
+      "q": "这家公司负责人是谁",
+      "ref": "enterprise_query",
+      "desc": "查某家公司的工商注册信息/背景",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "enterprise_query"
+    },
+    {
+      "id": 147,
+      "q": "公司成立多久了",
+      "ref": "enterprise_query",
+      "desc": "查某家公司的工商注册信息/背景",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "enterprise_query"
+    },
+    {
+      "id": 148,
+      "q": "注册资金有多少",
+      "ref": "enterprise_query",
+      "desc": "查某家公司的工商注册信息/背景",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "enterprise_query"
+    },
+    {
+      "id": 149,
+      "q": "这家公司主要做啥的",
+      "ref": "enterprise_query",
+      "desc": "查某家公司的工商注册信息/背景",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "enterprise_query"
+    },
+    {
+      "id": 150,
+      "q": "公司地址在哪儿",
+      "ref": "enterprise_query",
+      "desc": "查某家公司的工商注册信息/背景",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "enterprise_query"
+    },
+    {
+      "id": 151,
+      "q": "帮我看看这公司的股东",
+      "ref": "enterprise_query",
+      "desc": "查某家公司的工商注册信息/背景",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "enterprise_query"
+    },
+    {
+      "id": 152,
+      "q": "这家公司对外投资了吗",
+      "ref": "enterprise_query",
+      "desc": "查某家公司的工商注册信息/背景",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 8,
+      "annot2_ref": "enterprise_query"
+    },
+    {
+      "id": 153,
+      "q": "查查这家公司的注册情况",
+      "ref": "enterprise_query",
+      "desc": "查某家公司的工商注册信息/背景",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "enterprise_query"
+    },
+    {
+      "id": 154,
+      "q": "这家公司什么时候成立的",
+      "ref": "enterprise_query",
+      "desc": "查某家公司的工商注册信息/背景",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "enterprise_query"
+    },
+    {
+      "id": 155,
+      "q": "这公司还在正常营业吗",
+      "ref": "enterprise_query",
+      "desc": "查某家公司的工商注册信息/背景",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "enterprise_query"
+    },
+    {
+      "id": 156,
+      "q": "这家公司背景咋样",
+      "ref": "enterprise_query",
+      "desc": "查某家公司的工商注册信息/背景",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "enterprise_query"
+    },
+    {
+      "id": 157,
+      "q": "帮我摸摸这家公司的底",
+      "ref": "enterprise_query",
+      "desc": "查某家公司的工商注册信息/背景",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "enterprise_query"
+    },
+    {
+      "id": 158,
+      "q": "这公司股东都有谁",
+      "ref": "enterprise_query",
+      "desc": "查某家公司的工商注册信息/背景",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "enterprise_query"
+    },
+    {
+      "id": 159,
+      "q": "这家公司谁说了算",
+      "ref": "enterprise_query",
+      "desc": "查某家公司的工商注册信息/背景",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "enterprise_query"
+    },
+    {
+      "id": 160,
+      "q": "这公司归谁所有",
+      "ref": "enterprise_query",
+      "desc": "查某家公司的工商注册信息/背景",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "enterprise_query"
+    },
+    {
+      "id": 161,
+      "q": "哔哩哔哩上搜红烧肉教程",
+      "ref": "bilibili_search",
+      "desc": "在B站搜索视频",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 18,
+      "annot2_ref": "bilibili_search"
+    },
+    {
+      "id": 162,
+      "q": "去哔哩哔哩找个搞笑视频",
+      "ref": "bilibili_search",
+      "desc": "在B站搜索视频",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 18,
+      "annot2_ref": "bilibili_search"
+    },
+    {
+      "id": 163,
+      "q": "哔哩哔哩有没有钢琴教学",
+      "ref": "bilibili_search",
+      "desc": "在B站搜索视频",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 18,
+      "annot2_ref": "bilibili_search"
+    },
+    {
+      "id": 164,
+      "q": "帮我搜下哔哩哔哩的猫咪",
+      "ref": "bilibili_search",
+      "desc": "在B站搜索视频",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 18,
+      "annot2_ref": "bilibili_search"
+    },
+    {
+      "id": 165,
+      "q": "哔哩哔哩上找纪录片看",
+      "ref": "bilibili_search",
+      "desc": "在B站搜索视频",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 18,
+      "annot2_ref": "bilibili_search"
+    },
+    {
+      "id": 166,
+      "q": "搜哔哩哔哩的露营视频",
+      "ref": "bilibili_search",
+      "desc": "在B站搜索视频",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 18,
+      "annot2_ref": "bilibili_search"
+    },
+    {
+      "id": 167,
+      "q": "哔哩哔哩上看看考研数学",
+      "ref": "bilibili_search",
+      "desc": "在B站搜索视频",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 18,
+      "annot2_ref": "bilibili_search"
+    },
+    {
+      "id": 168,
+      "q": "找个哔哩哔哩的健身教程",
+      "ref": "bilibili_search",
+      "desc": "在B站搜索视频",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "bilibili_search"
+    },
+    {
+      "id": 169,
+      "q": "哔哩哔哩上搜最近很火的歌",
+      "ref": "bilibili_search",
+      "desc": "在B站搜索视频",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 18,
+      "annot2_ref": "bilibili_search"
+    },
+    {
+      "id": 170,
+      "q": "去哔哩哔哩找做饭教程",
+      "ref": "bilibili_search",
+      "desc": "在B站搜索视频",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 18,
+      "annot2_ref": "bilibili_search"
+    },
+    {
+      "id": 171,
+      "q": "哔哩哔哩上有没有游戏解说",
+      "ref": "bilibili_search",
+      "desc": "在B站搜索视频",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "bilibili_search"
+    },
+    {
+      "id": 172,
+      "q": "帮我找哔哩哔哩的英语课",
+      "ref": "bilibili_search",
+      "desc": "在B站搜索视频",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 18,
+      "annot2_ref": "bilibili_search"
+    },
+    {
+      "id": 173,
+      "q": "哔哩哔哩搜一下手工教程",
+      "ref": "bilibili_search",
+      "desc": "在B站搜索视频",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 18,
+      "annot2_ref": "bilibili_search"
+    },
+    {
+      "id": 174,
+      "q": "哔哩哔哩上找动漫剪辑",
+      "ref": "bilibili_search",
+      "desc": "在B站搜索视频",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 18,
+      "annot2_ref": "bilibili_search"
+    },
+    {
+      "id": 175,
+      "q": "找个哔哩哔哩的旅游攻略视频",
+      "ref": "bilibili_search",
+      "desc": "在B站搜索视频",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 18,
+      "annot2_ref": "bilibili_search"
+    },
+    {
+      "id": 176,
+      "q": "哔哩哔哩上搜手机测评",
+      "ref": "bilibili_search",
+      "desc": "在B站搜索视频",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 18,
+      "annot2_ref": "bilibili_search"
+    },
+    {
+      "id": 177,
+      "q": "去哔哩哔哩找考研经验",
+      "ref": "bilibili_search",
+      "desc": "在B站搜索视频",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 18,
+      "annot2_ref": "bilibili_search"
+    },
+    {
+      "id": 178,
+      "q": "哔哩哔哩上搜宝宝辅食",
+      "ref": "bilibili_search",
+      "desc": "在B站搜索视频",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 18,
+      "annot2_ref": "bilibili_search"
+    },
+    {
+      "id": 179,
+      "q": "帮我搜哔哩哔哩的画画教程",
+      "ref": "bilibili_search",
+      "desc": "在B站搜索视频",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 18,
+      "annot2_ref": "bilibili_search"
+    },
+    {
+      "id": 180,
+      "q": "哔哩哔哩上找相声视频",
+      "ref": "bilibili_search",
+      "desc": "在B站搜索视频",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 18,
+      "annot2_ref": "bilibili_search"
+    },
+    {
+      "id": 181,
+      "q": "电脑变慢了，帮我看看",
+      "ref": "pc_maintenance",
+      "desc": "清理电脑垃圾、电脑变慢、系统维护体检",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "pc_maintenance"
+    },
+    {
+      "id": 182,
+      "q": "清理一下电脑垃圾",
+      "ref": "pc_maintenance",
+      "desc": "清理电脑垃圾、电脑变慢、系统维护体检",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 12,
+      "annot2_ref": "pc_maintenance"
+    },
+    {
+      "id": 183,
+      "q": "电脑卡得不行，弄弄",
+      "ref": "pc_maintenance",
+      "desc": "清理电脑垃圾、电脑变慢、系统维护体检",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 7,
+      "annot2_ref": "pc_maintenance"
+    },
+    {
+      "id": 184,
+      "q": "给电脑做个体检",
+      "ref": "pc_maintenance",
+      "desc": "清理电脑垃圾、电脑变慢、系统维护体检",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 12,
+      "annot2_ref": "pc_maintenance"
+    },
+    {
+      "id": 185,
+      "q": "系统垃圾太多，清一清",
+      "ref": "pc_maintenance",
+      "desc": "清理电脑垃圾、电脑变慢、系统维护体检",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 12,
+      "annot2_ref": "pc_maintenance"
+    },
+    {
+      "id": 186,
+      "q": "电脑反应好慢，优化下",
+      "ref": "pc_maintenance",
+      "desc": "清理电脑垃圾、电脑变慢、系统维护体检",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "pc_maintenance"
+    },
+    {
+      "id": 187,
+      "q": "帮我维护下电脑",
+      "ref": "pc_maintenance",
+      "desc": "清理电脑垃圾、电脑变慢、系统维护体检",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 12,
+      "annot2_ref": "pc_maintenance"
+    },
+    {
+      "id": 188,
+      "q": "电脑该清理了吧",
+      "ref": "pc_maintenance",
+      "desc": "清理电脑垃圾、电脑变慢、系统维护体检",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 12,
+      "annot2_ref": "pc_maintenance"
+    },
+    {
+      "id": 189,
+      "q": "电脑慢死了，怎么回事",
+      "ref": "pc_maintenance",
+      "desc": "清理电脑垃圾、电脑变慢、系统维护体检",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 7,
+      "annot2_ref": "pc_maintenance"
+    },
+    {
+      "id": 190,
+      "q": "清理垃圾，让电脑快点",
+      "ref": "pc_maintenance",
+      "desc": "清理电脑垃圾、电脑变慢、系统维护体检",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 12,
+      "annot2_ref": "pc_maintenance"
+    },
+    {
+      "id": 191,
+      "q": "做下系统维护",
+      "ref": "pc_maintenance",
+      "desc": "清理电脑垃圾、电脑变慢、系统维护体检",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 12,
+      "annot2_ref": "pc_maintenance"
+    },
+    {
+      "id": 192,
+      "q": "电脑有点卡，清一下",
+      "ref": "pc_maintenance",
+      "desc": "清理电脑垃圾、电脑变慢、系统维护体检",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "pc_maintenance"
+    },
+    {
+      "id": 193,
+      "q": "帮我给电脑减减负",
+      "ref": "pc_maintenance",
+      "desc": "清理电脑垃圾、电脑变慢、系统维护体检",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "pc_maintenance"
+    },
+    {
+      "id": 194,
+      "q": "电脑运行不畅，处理下",
+      "ref": "pc_maintenance",
+      "desc": "清理电脑垃圾、电脑变慢、系统维护体检",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "pc_maintenance"
+    },
+    {
+      "id": 195,
+      "q": "体检一下我的电脑",
+      "ref": "pc_maintenance",
+      "desc": "清理电脑垃圾、电脑变慢、系统维护体检",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 12,
+      "annot2_ref": "pc_maintenance"
+    },
+    {
+      "id": 196,
+      "q": "清理下系统垃圾",
+      "ref": "pc_maintenance",
+      "desc": "清理电脑垃圾、电脑变慢、系统维护体检",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 12,
+      "annot2_ref": "pc_maintenance"
+    },
+    {
+      "id": 197,
+      "q": "电脑越来越慢，咋办",
+      "ref": "pc_maintenance",
+      "desc": "清理电脑垃圾、电脑变慢、系统维护体检",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "pc_maintenance"
+    },
+    {
+      "id": 198,
+      "q": "给电脑清理维护一下",
+      "ref": "pc_maintenance",
+      "desc": "清理电脑垃圾、电脑变慢、系统维护体检",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 12,
+      "annot2_ref": "pc_maintenance"
+    },
+    {
+      "id": 199,
+      "q": "系统需要清理了吗",
+      "ref": "pc_maintenance",
+      "desc": "清理电脑垃圾、电脑变慢、系统维护体检",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 12,
+      "annot2_ref": "pc_maintenance"
+    },
+    {
+      "id": 200,
+      "q": "电脑垃圾多，变慢了",
+      "ref": "pc_maintenance",
+      "desc": "清理电脑垃圾、电脑变慢、系统维护体检",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "pc_maintenance"
+    },
+    {
+      "id": 201,
+      "q": "看看上个月拍的全家福",
+      "ref": "family_album",
+      "desc": "查看/管理家庭相册和照片",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "family_album"
+    },
+    {
+      "id": 202,
+      "q": "把宝宝的照片整理一下",
+      "ref": "family_album",
+      "desc": "查看/管理家庭相册和照片",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "family_album"
+    },
+    {
+      "id": 203,
+      "q": "找找去年过年的合影",
+      "ref": "family_album",
+      "desc": "查看/管理家庭相册和照片",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "family_album"
+    },
+    {
+      "id": 204,
+      "q": "删掉重复的照片",
+      "ref": "family_album",
+      "desc": "查看/管理家庭相册和照片",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "family_album"
+    },
+    {
+      "id": 205,
+      "q": "把这张照片放进家庭相册",
+      "ref": "family_album",
+      "desc": "查看/管理家庭相册和照片",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "family_album"
+    },
+    {
+      "id": 206,
+      "q": "爷爷奶奶的照片在哪儿",
+      "ref": "family_album",
+      "desc": "查看/管理家庭相册和照片",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "family_album"
+    },
+    {
+      "id": 207,
+      "q": "最近拍的照片给我看看",
+      "ref": "family_album",
+      "desc": "查看/管理家庭相册和照片",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "family_album"
+    },
+    {
+      "id": 208,
+      "q": "创建一个新相册叫周末出游",
+      "ref": "family_album",
+      "desc": "查看/管理家庭相册和照片",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "family_album"
+    },
+    {
+      "id": 209,
+      "q": "把这张照片设为封面",
+      "ref": "family_album",
+      "desc": "查看/管理家庭相册和照片",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "family_album"
+    },
+    {
+      "id": 210,
+      "q": "谁的照片最多",
+      "ref": "family_album",
+      "desc": "查看/管理家庭相册和照片",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "family_album"
+    },
+    {
+      "id": 211,
+      "q": "帮我按人脸分类照片",
+      "ref": "family_album",
+      "desc": "查看/管理家庭相册和照片",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "family_album"
+    },
+    {
+      "id": 212,
+      "q": "把模糊的照片清理掉",
+      "ref": "family_album",
+      "desc": "查看/管理家庭相册和照片",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 12,
+      "annot2_ref": "family_album"
+    },
+    {
+      "id": 213,
+      "q": "导出所有家庭照片",
+      "ref": "family_album",
+      "desc": "查看/管理家庭相册和照片",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 13,
+      "annot2_ref": "family_album"
+    },
+    {
+      "id": 214,
+      "q": "分享相册给家里人",
+      "ref": "family_album",
+      "desc": "查看/管理家庭相册和照片",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "family_album"
+    },
+    {
+      "id": 215,
+      "q": "搜索有蛋糕的照片",
+      "ref": "family_album",
+      "desc": "查看/管理家庭相册和照片",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "family_album"
+    },
+    {
+      "id": 216,
+      "q": "看看我小时候的照片",
+      "ref": "family_album",
+      "desc": "查看/管理家庭相册和照片",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "family_album"
+    },
+    {
+      "id": 217,
+      "q": "把去年今天的照片找出来",
+      "ref": "family_album",
+      "desc": "查看/管理家庭相册和照片",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "family_album"
+    },
+    {
+      "id": 218,
+      "q": "给照片加个标签",
+      "ref": "family_album",
+      "desc": "查看/管理家庭相册和照片",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "family_album"
+    },
+    {
+      "id": 219,
+      "q": "隐藏这个相册",
+      "ref": "family_album",
+      "desc": "查看/管理家庭相册和照片",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "family_album"
+    },
+    {
+      "id": 220,
+      "q": "恢复删掉的照片",
+      "ref": "family_album",
+      "desc": "查看/管理家庭相册和照片",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "family_album"
+    },
+    {
+      "id": 221,
+      "q": "鲁迅的百科看一下",
+      "ref": "baike_lookup",
+      "desc": "查百度百科词条（人物、概念、事物）",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 18,
+      "annot2_ref": "baike_lookup"
+    },
+    {
+      "id": 222,
+      "q": "帮我查查爱因斯坦百科",
+      "ref": "baike_lookup",
+      "desc": "查百度百科词条（人物、概念、事物）",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 18,
+      "annot2_ref": "baike_lookup"
+    },
+    {
+      "id": 223,
+      "q": "量子力学百科是什么",
+      "ref": "baike_lookup",
+      "desc": "查百度百科词条（人物、概念、事物）",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 18,
+      "annot2_ref": "baike_lookup"
+    },
+    {
+      "id": 224,
+      "q": "孔子百科翻一下",
+      "ref": "baike_lookup",
+      "desc": "查百度百科词条（人物、概念、事物）",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 18,
+      "annot2_ref": "baike_lookup"
+    },
+    {
+      "id": 225,
+      "q": "查查秦始皇的百科",
+      "ref": "baike_lookup",
+      "desc": "查百度百科词条（人物、概念、事物）",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 18,
+      "annot2_ref": "baike_lookup"
+    },
+    {
+      "id": 226,
+      "q": "黑洞百科有吗",
+      "ref": "baike_lookup",
+      "desc": "查百度百科词条（人物、概念、事物）",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 18,
+      "annot2_ref": "baike_lookup"
+    },
+    {
+      "id": 227,
+      "q": "李白百科给我看看",
+      "ref": "baike_lookup",
+      "desc": "查百度百科词条（人物、概念、事物）",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 18,
+      "annot2_ref": "baike_lookup"
+    },
+    {
+      "id": 228,
+      "q": "唐朝百科查一下",
+      "ref": "baike_lookup",
+      "desc": "查百度百科词条（人物、概念、事物）",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 18,
+      "annot2_ref": "baike_lookup"
+    },
+    {
+      "id": 229,
+      "q": "人工智能百科在哪",
+      "ref": "baike_lookup",
+      "desc": "查百度百科词条（人物、概念、事物）",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 18,
+      "annot2_ref": "baike_lookup"
+    },
+    {
+      "id": 230,
+      "q": "牛顿百科资料",
+      "ref": "baike_lookup",
+      "desc": "查百度百科词条（人物、概念、事物）",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 18,
+      "annot2_ref": "baike_lookup"
+    },
+    {
+      "id": 231,
+      "q": "巴黎百科介绍一下",
+      "ref": "baike_lookup",
+      "desc": "查百度百科词条（人物、概念、事物）",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 18,
+      "annot2_ref": "baike_lookup"
+    },
+    {
+      "id": 232,
+      "q": "相对论百科是什么",
+      "ref": "baike_lookup",
+      "desc": "查百度百科词条（人物、概念、事物）",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 18,
+      "annot2_ref": "baike_lookup"
+    },
+    {
+      "id": 233,
+      "q": "达尔文百科查查",
+      "ref": "baike_lookup",
+      "desc": "查百度百科词条（人物、概念、事物）",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 18,
+      "annot2_ref": "baike_lookup"
+    },
+    {
+      "id": 234,
+      "q": "长城百科看看",
+      "ref": "baike_lookup",
+      "desc": "查百度百科词条（人物、概念、事物）",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 18,
+      "annot2_ref": "baike_lookup"
+    },
+    {
+      "id": 235,
+      "q": "红楼梦百科搜一下",
+      "ref": "baike_lookup",
+      "desc": "查百度百科词条（人物、概念、事物）",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 18,
+      "annot2_ref": "baike_lookup"
+    },
+    {
+      "id": 236,
+      "q": "莫扎特百科有吗",
+      "ref": "baike_lookup",
+      "desc": "查百度百科词条（人物、概念、事物）",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 18,
+      "annot2_ref": "baike_lookup"
+    },
+    {
+      "id": 237,
+      "q": "地球百科查查",
+      "ref": "baike_lookup",
+      "desc": "查百度百科词条（人物、概念、事物）",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 18,
+      "annot2_ref": "baike_lookup"
+    },
+    {
+      "id": 238,
+      "q": "儒家百科是什么",
+      "ref": "baike_lookup",
+      "desc": "查百度百科词条（人物、概念、事物）",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 18,
+      "annot2_ref": "baike_lookup"
+    },
+    {
+      "id": 239,
+      "q": "苏轼百科帮我找",
+      "ref": "baike_lookup",
+      "desc": "查百度百科词条（人物、概念、事物）",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 18,
+      "annot2_ref": "baike_lookup"
+    },
+    {
+      "id": 240,
+      "q": "进化论百科看看",
+      "ref": "baike_lookup",
+      "desc": "查百度百科词条（人物、概念、事物）",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 18,
+      "annot2_ref": "baike_lookup"
+    },
+    {
+      "id": 241,
+      "q": "今天天气怎么样？",
+      "ref": "weather",
+      "desc": "查天气、气温、要不要带伞",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 11,
+      "annot2_ref": "weather"
+    },
+    {
+      "id": 242,
+      "q": "外面下雨了吗？",
+      "ref": "weather",
+      "desc": "查天气、气温、要不要带伞",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "weather"
+    },
+    {
+      "id": 243,
+      "q": "需要带伞吗？",
+      "ref": "weather",
+      "desc": "查天气、气温、要不要带伞",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "weather"
+    },
+    {
+      "id": 244,
+      "q": "今天气温多少？",
+      "ref": "weather",
+      "desc": "查天气、气温、要不要带伞",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 11,
+      "annot2_ref": "weather"
+    },
+    {
+      "id": 245,
+      "q": "明天会下雨吗？",
+      "ref": "weather",
+      "desc": "查天气、气温、要不要带伞",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "weather"
+    },
+    {
+      "id": 246,
+      "q": "现在外面多少度？",
+      "ref": "weather",
+      "desc": "查天气、气温、要不要带伞",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "weather"
+    },
+    {
+      "id": 247,
+      "q": "今天冷不冷？",
+      "ref": "weather",
+      "desc": "查天气、气温、要不要带伞",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "weather"
+    },
+    {
+      "id": 248,
+      "q": "出门要穿外套吗？",
+      "ref": "weather",
+      "desc": "查天气、气温、要不要带伞",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "weather"
+    },
+    {
+      "id": 249,
+      "q": "下午有雨吗？",
+      "ref": "weather",
+      "desc": "查天气、气温、要不要带伞",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "weather"
+    },
+    {
+      "id": 250,
+      "q": "明天天气如何？",
+      "ref": "weather",
+      "desc": "查天气、气温、要不要带伞",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 11,
+      "annot2_ref": "weather"
+    },
+    {
+      "id": 251,
+      "q": "周末下雨吗？",
+      "ref": "weather",
+      "desc": "查天气、气温、要不要带伞",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "weather"
+    },
+    {
+      "id": 252,
+      "q": "今天热不热？",
+      "ref": "weather",
+      "desc": "查天气、气温、要不要带伞",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "weather"
+    },
+    {
+      "id": 253,
+      "q": "要带雨伞出门吗？",
+      "ref": "weather",
+      "desc": "查天气、气温、要不要带伞",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "weather"
+    },
+    {
+      "id": 254,
+      "q": "今晚会降温吗？",
+      "ref": "weather",
+      "desc": "查天气、气温、要不要带伞",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "weather"
+    },
+    {
+      "id": 255,
+      "q": "现在风大不大？",
+      "ref": "weather",
+      "desc": "查天气、气温、要不要带伞",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "weather"
+    },
+    {
+      "id": 256,
+      "q": "早上有雨吗？",
+      "ref": "weather",
+      "desc": "查天气、气温、要不要带伞",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "weather"
+    },
+    {
+      "id": 257,
+      "q": "明天冷不冷？",
+      "ref": "weather",
+      "desc": "查天气、气温、要不要带伞",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "weather"
+    },
+    {
+      "id": 258,
+      "q": "出门要不要带伞？",
+      "ref": "weather",
+      "desc": "查天气、气温、要不要带伞",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "weather"
+    },
+    {
+      "id": 259,
+      "q": "今天有太阳吗？",
+      "ref": "weather",
+      "desc": "查天气、气温、要不要带伞",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "weather"
+    },
+    {
+      "id": 260,
+      "q": "外面天气好吗？",
+      "ref": "weather",
+      "desc": "查天气、气温、要不要带伞",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 11,
+      "annot2_ref": "weather"
+    },
+    {
+      "id": 261,
+      "q": "放首歌听听",
+      "ref": "music_player",
+      "desc": "播放音乐、放首歌",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "music_player"
+    },
+    {
+      "id": 262,
+      "q": "来点音乐",
+      "ref": "music_player",
+      "desc": "播放音乐、放首歌",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "music_player"
+    },
+    {
+      "id": 263,
+      "q": "给我放首歌",
+      "ref": "music_player",
+      "desc": "播放音乐、放首歌",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "music_player"
+    },
+    {
+      "id": 264,
+      "q": "我想听周杰伦的歌",
+      "ref": "music_player",
+      "desc": "播放音乐、放首歌",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "music_player"
+    },
+    {
+      "id": 265,
+      "q": "能放首轻音乐吗",
+      "ref": "music_player",
+      "desc": "播放音乐、放首歌",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "music_player"
+    },
+    {
+      "id": 266,
+      "q": "播放稻香",
+      "ref": "music_player",
+      "desc": "播放音乐、放首歌",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "music_player"
+    },
+    {
+      "id": 267,
+      "q": "来一首安静点的歌",
+      "ref": "music_player",
+      "desc": "播放音乐、放首歌",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "music_player"
+    },
+    {
+      "id": 268,
+      "q": "放点摇滚乐",
+      "ref": "music_player",
+      "desc": "播放音乐、放首歌",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "music_player"
+    },
+    {
+      "id": 269,
+      "q": "给我来首流行歌",
+      "ref": "music_player",
+      "desc": "播放音乐、放首歌",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "music_player"
+    },
+    {
+      "id": 270,
+      "q": "随便放首歌",
+      "ref": "music_player",
+      "desc": "播放音乐、放首歌",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "music_player"
+    },
+    {
+      "id": 271,
+      "q": "放首好听的歌",
+      "ref": "music_player",
+      "desc": "播放音乐、放首歌",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "music_player"
+    },
+    {
+      "id": 272,
+      "q": "我想听音乐",
+      "ref": "music_player",
+      "desc": "播放音乐、放首歌",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "music_player"
+    },
+    {
+      "id": 273,
+      "q": "来首歌吧",
+      "ref": "music_player",
+      "desc": "播放音乐、放首歌",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "music_player"
+    },
+    {
+      "id": 274,
+      "q": "放一下那首晴天",
+      "ref": "music_player",
+      "desc": "播放音乐、放首歌",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "music_player"
+    },
+    {
+      "id": 275,
+      "q": "给我放点钢琴曲",
+      "ref": "music_player",
+      "desc": "播放音乐、放首歌",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "music_player"
+    },
+    {
+      "id": 276,
+      "q": "能来点背景音乐吗",
+      "ref": "music_player",
+      "desc": "播放音乐、放首歌",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "music_player"
+    },
+    {
+      "id": 277,
+      "q": "放一首外语歌",
+      "ref": "music_player",
+      "desc": "播放音乐、放首歌",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "music_player"
+    },
+    {
+      "id": 278,
+      "q": "来段音乐",
+      "ref": "music_player",
+      "desc": "播放音乐、放首歌",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "music_player"
+    },
+    {
+      "id": 279,
+      "q": "我想听陈奕迅",
+      "ref": "music_player",
+      "desc": "播放音乐、放首歌",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "music_player"
+    },
+    {
+      "id": 280,
+      "q": "放点轻松的音乐",
+      "ref": "music_player",
+      "desc": "播放音乐、放首歌",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "music_player"
+    },
+    {
+      "id": 281,
+      "q": "打开收音机",
+      "ref": "listen_radio",
+      "desc": "听电台/广播节目",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "listen_radio"
+    },
+    {
+      "id": 282,
+      "q": "想听广播",
+      "ref": "listen_radio",
+      "desc": "听电台/广播节目",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "listen_radio"
+    },
+    {
+      "id": 283,
+      "q": "放个电台听听",
+      "ref": "listen_radio",
+      "desc": "听电台/广播节目",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "listen_radio"
+    },
+    {
+      "id": 284,
+      "q": "帮我调个电台",
+      "ref": "listen_radio",
+      "desc": "听电台/广播节目",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "listen_radio"
+    },
+    {
+      "id": 285,
+      "q": "听听交通广播",
+      "ref": "listen_radio",
+      "desc": "听电台/广播节目",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "listen_radio"
+    },
+    {
+      "id": 286,
+      "q": "调到新闻台",
+      "ref": "listen_radio",
+      "desc": "听电台/广播节目",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 9,
+      "annot2_ref": "watch_tv"
+    },
+    {
+      "id": 287,
+      "q": "收音机开一下",
+      "ref": "listen_radio",
+      "desc": "听电台/广播节目",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "listen_radio"
+    },
+    {
+      "id": 288,
+      "q": "能放个广播吗",
+      "ref": "listen_radio",
+      "desc": "听电台/广播节目",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "listen_radio"
+    },
+    {
+      "id": 289,
+      "q": "来个音乐电台",
+      "ref": "listen_radio",
+      "desc": "听电台/广播节目",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "listen_radio"
+    },
+    {
+      "id": 290,
+      "q": "换个广播频道",
+      "ref": "listen_radio",
+      "desc": "听电台/广播节目",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "listen_radio"
+    },
+    {
+      "id": 291,
+      "q": "我想听电台节目",
+      "ref": "listen_radio",
+      "desc": "听电台/广播节目",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "listen_radio"
+    },
+    {
+      "id": 292,
+      "q": "放一下广播",
+      "ref": "listen_radio",
+      "desc": "听电台/广播节目",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "listen_radio"
+    },
+    {
+      "id": 293,
+      "q": "听听收音机里的节目",
+      "ref": "listen_radio",
+      "desc": "听电台/广播节目",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "listen_radio"
+    },
+    {
+      "id": 294,
+      "q": "帮我找个电台听听",
+      "ref": "listen_radio",
+      "desc": "听电台/广播节目",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "listen_radio"
+    },
+    {
+      "id": 295,
+      "q": "给我开个广播",
+      "ref": "listen_radio",
+      "desc": "听电台/广播节目",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "listen_radio"
+    },
+    {
+      "id": 296,
+      "q": "转个电台听听",
+      "ref": "listen_radio",
+      "desc": "听电台/广播节目",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "listen_radio"
+    },
+    {
+      "id": 297,
+      "q": "播放本地广播",
+      "ref": "listen_radio",
+      "desc": "听电台/广播节目",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "listen_radio"
+    },
+    {
+      "id": 298,
+      "q": "我想收听广播",
+      "ref": "listen_radio",
+      "desc": "听电台/广播节目",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "listen_radio"
+    },
+    {
+      "id": 299,
+      "q": "放个电台节目",
+      "ref": "listen_radio",
+      "desc": "听电台/广播节目",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "listen_radio"
+    },
+    {
+      "id": 300,
+      "q": "打开广播听听",
+      "ref": "listen_radio",
+      "desc": "听电台/广播节目",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "listen_radio"
+    },
+    {
+      "id": 301,
+      "q": "看电视直播",
+      "ref": "watch_tv",
+      "desc": "看电视直播/电视频道",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "watch_tv"
+    },
+    {
+      "id": 302,
+      "q": "我想看电视直播",
+      "ref": "watch_tv",
+      "desc": "看电视直播/电视频道",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "watch_tv"
+    },
+    {
+      "id": 303,
+      "q": "帮我打开电视直播",
+      "ref": "watch_tv",
+      "desc": "看电视直播/电视频道",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "watch_tv"
+    },
+    {
+      "id": 304,
+      "q": "放个电视直播看看",
+      "ref": "watch_tv",
+      "desc": "看电视直播/电视频道",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "watch_tv"
+    },
+    {
+      "id": 305,
+      "q": "调出电视直播",
+      "ref": "watch_tv",
+      "desc": "看电视直播/电视频道",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "watch_tv"
+    },
+    {
+      "id": 306,
+      "q": "看中央一台",
+      "ref": "watch_tv",
+      "desc": "看电视直播/电视频道",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "watch_tv"
+    },
+    {
+      "id": 307,
+      "q": "切到中央一台",
+      "ref": "watch_tv",
+      "desc": "看电视直播/电视频道",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "watch_tv"
+    },
+    {
+      "id": 308,
+      "q": "换到湖南卫视",
+      "ref": "watch_tv",
+      "desc": "看电视直播/电视频道",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "watch_tv"
+    },
+    {
+      "id": 309,
+      "q": "我要看浙江卫视",
+      "ref": "watch_tv",
+      "desc": "看电视直播/电视频道",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "watch_tv"
+    },
+    {
+      "id": 310,
+      "q": "转到东方卫视",
+      "ref": "watch_tv",
+      "desc": "看电视直播/电视频道",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "watch_tv"
+    },
+    {
+      "id": 311,
+      "q": "放江苏卫视",
+      "ref": "watch_tv",
+      "desc": "看电视直播/电视频道",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "watch_tv"
+    },
+    {
+      "id": 312,
+      "q": "看北京卫视",
+      "ref": "watch_tv",
+      "desc": "看电视直播/电视频道",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "watch_tv"
+    },
+    {
+      "id": 313,
+      "q": "切到体育频道",
+      "ref": "watch_tv",
+      "desc": "看电视直播/电视频道",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "watch_tv"
+    },
+    {
+      "id": 314,
+      "q": "换到电影频道",
+      "ref": "watch_tv",
+      "desc": "看电视直播/电视频道",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "watch_tv"
+    },
+    {
+      "id": 315,
+      "q": "调出少儿频道",
+      "ref": "watch_tv",
+      "desc": "看电视直播/电视频道",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "watch_tv"
+    },
+    {
+      "id": 316,
+      "q": "看新闻频道",
+      "ref": "watch_tv",
+      "desc": "看电视直播/电视频道",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 9,
+      "annot2_ref": "watch_tv"
+    },
+    {
+      "id": 317,
+      "q": "我要看综艺频道",
+      "ref": "watch_tv",
+      "desc": "看电视直播/电视频道",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "watch_tv"
+    },
+    {
+      "id": 318,
+      "q": "换个台",
+      "ref": "watch_tv",
+      "desc": "看电视直播/电视频道",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "watch_tv"
+    },
+    {
+      "id": 319,
+      "q": "调到中央五台",
+      "ref": "watch_tv",
+      "desc": "看电视直播/电视频道",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "watch_tv"
+    },
+    {
+      "id": 320,
+      "q": "切个台",
+      "ref": "watch_tv",
+      "desc": "看电视直播/电视频道",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "watch_tv"
+    },
+    {
+      "id": 321,
+      "q": "今天做什么菜好？",
+      "ref": "recipe_library",
+      "desc": "查菜谱、今天做什么菜、怎么做某道菜",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "recipe_library"
+    },
+    {
+      "id": 322,
+      "q": "红烧肉怎么做？",
+      "ref": "recipe_library",
+      "desc": "查菜谱、今天做什么菜、怎么做某道菜",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "recipe_library"
+    },
+    {
+      "id": 323,
+      "q": "番茄炒蛋咋做？",
+      "ref": "recipe_library",
+      "desc": "查菜谱、今天做什么菜、怎么做某道菜",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "recipe_library"
+    },
+    {
+      "id": 324,
+      "q": "来个家常菜谱。",
+      "ref": "recipe_library",
+      "desc": "查菜谱、今天做什么菜、怎么做某道菜",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "recipe_library"
+    },
+    {
+      "id": 325,
+      "q": "晚饭做什么菜？",
+      "ref": "recipe_library",
+      "desc": "查菜谱、今天做什么菜、怎么做某道菜",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "recipe_library"
+    },
+    {
+      "id": 326,
+      "q": "清蒸鱼怎么做？",
+      "ref": "recipe_library",
+      "desc": "查菜谱、今天做什么菜、怎么做某道菜",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "recipe_library"
+    },
+    {
+      "id": 327,
+      "q": "有没有简单的汤谱？",
+      "ref": "recipe_library",
+      "desc": "查菜谱、今天做什么菜、怎么做某道菜",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "recipe_library"
+    },
+    {
+      "id": 328,
+      "q": "土豆能做什么菜？",
+      "ref": "recipe_library",
+      "desc": "查菜谱、今天做什么菜、怎么做某道菜",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "recipe_library"
+    },
+    {
+      "id": 329,
+      "q": "推荐几个下饭菜。",
+      "ref": "recipe_library",
+      "desc": "查菜谱、今天做什么菜、怎么做某道菜",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "recipe_library"
+    },
+    {
+      "id": 330,
+      "q": "麻婆豆腐的做法。",
+      "ref": "recipe_library",
+      "desc": "查菜谱、今天做什么菜、怎么做某道菜",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "recipe_library"
+    },
+    {
+      "id": 331,
+      "q": "我想学做糖醋排骨。",
+      "ref": "recipe_library",
+      "desc": "查菜谱、今天做什么菜、怎么做某道菜",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "recipe_library"
+    },
+    {
+      "id": 332,
+      "q": "中午做什么菜？",
+      "ref": "recipe_library",
+      "desc": "查菜谱、今天做什么菜、怎么做某道菜",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "recipe_library"
+    },
+    {
+      "id": 333,
+      "q": "鸡蛋有哪些做法？",
+      "ref": "recipe_library",
+      "desc": "查菜谱、今天做什么菜、怎么做某道菜",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "recipe_library"
+    },
+    {
+      "id": 334,
+      "q": "教我做酸辣土豆丝。",
+      "ref": "recipe_library",
+      "desc": "查菜谱、今天做什么菜、怎么做某道菜",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "recipe_library"
+    },
+    {
+      "id": 335,
+      "q": "来个快手菜谱。",
+      "ref": "recipe_library",
+      "desc": "查菜谱、今天做什么菜、怎么做某道菜",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "recipe_library"
+    },
+    {
+      "id": 336,
+      "q": "白菜怎么炒好吃？",
+      "ref": "recipe_library",
+      "desc": "查菜谱、今天做什么菜、怎么做某道菜",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "recipe_library"
+    },
+    {
+      "id": 337,
+      "q": "适合新手的菜有哪些？",
+      "ref": "recipe_library",
+      "desc": "查菜谱、今天做什么菜、怎么做某道菜",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "recipe_library"
+    },
+    {
+      "id": 338,
+      "q": "晚餐吃什么家常菜？",
+      "ref": "recipe_library",
+      "desc": "查菜谱、今天做什么菜、怎么做某道菜",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "recipe_library"
+    },
+    {
+      "id": 339,
+      "q": "鲫鱼豆腐汤怎么做？",
+      "ref": "recipe_library",
+      "desc": "查菜谱、今天做什么菜、怎么做某道菜",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "recipe_library"
+    },
+    {
+      "id": 340,
+      "q": "凉拌黄瓜咋做？",
+      "ref": "recipe_library",
+      "desc": "查菜谱、今天做什么菜、怎么做某道菜",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "recipe_library"
+    },
+    {
+      "id": 341,
+      "q": "帮我记个待办",
+      "ref": "todo",
+      "desc": "记一条待办/任务、看待办清单",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "todo"
+    },
+    {
+      "id": 342,
+      "q": "加一条任务",
+      "ref": "todo",
+      "desc": "记一条待办/任务、看待办清单",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "todo"
+    },
+    {
+      "id": 343,
+      "q": "待办清单给我看看",
+      "ref": "todo",
+      "desc": "记一条待办/任务、看待办清单",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "todo"
+    },
+    {
+      "id": 344,
+      "q": "我还有什么没完成",
+      "ref": "todo",
+      "desc": "记一条待办/任务、看待办清单",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "todo"
+    },
+    {
+      "id": 345,
+      "q": "记个待办：下午买牛奶",
+      "ref": "todo",
+      "desc": "记一条待办/任务、看待办清单",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "todo"
+    },
+    {
+      "id": 346,
+      "q": "把这个加到待办里",
+      "ref": "todo",
+      "desc": "记一条待办/任务、看待办清单",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "todo"
+    },
+    {
+      "id": 347,
+      "q": "列一下要做的事",
+      "ref": "todo",
+      "desc": "记一条待办/任务、看待办清单",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "todo"
+    },
+    {
+      "id": 348,
+      "q": "查查我的待办",
+      "ref": "todo",
+      "desc": "记一条待办/任务、看待办清单",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "todo"
+    },
+    {
+      "id": 349,
+      "q": "新增一条待办：给妈妈打电话",
+      "ref": "todo",
+      "desc": "记一条待办/任务、看待办清单",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "todo"
+    },
+    {
+      "id": 350,
+      "q": "我有哪些事还没做",
+      "ref": "todo",
+      "desc": "记一条待办/任务、看待办清单",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "todo"
+    },
+    {
+      "id": 351,
+      "q": "待办事项有哪些",
+      "ref": "todo",
+      "desc": "记一条待办/任务、看待办清单",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "todo"
+    },
+    {
+      "id": 352,
+      "q": "帮我建个任务，周五交报告",
+      "ref": "todo",
+      "desc": "记一条待办/任务、看待办清单",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "todo"
+    },
+    {
+      "id": 353,
+      "q": "看看我的任务列表",
+      "ref": "todo",
+      "desc": "记一条待办/任务、看待办清单",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "todo"
+    },
+    {
+      "id": 354,
+      "q": "记个待办：待会儿交电费",
+      "ref": "todo",
+      "desc": "记一条待办/任务、看待办清单",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "todo"
+    },
+    {
+      "id": 355,
+      "q": "加个待办：取快递",
+      "ref": "todo",
+      "desc": "记一条待办/任务、看待办清单",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "todo"
+    },
+    {
+      "id": 356,
+      "q": "我今天的待办有哪些",
+      "ref": "todo",
+      "desc": "记一条待办/任务、看待办清单",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "todo"
+    },
+    {
+      "id": 357,
+      "q": "把整理桌面加到要做的事里",
+      "ref": "todo",
+      "desc": "记一条待办/任务、看待办清单",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "todo"
+    },
+    {
+      "id": 358,
+      "q": "列一下还没完成的任务",
+      "ref": "todo",
+      "desc": "记一条待办/任务、看待办清单",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "todo"
+    },
+    {
+      "id": 359,
+      "q": "记一条待办，明天还书",
+      "ref": "todo",
+      "desc": "记一条待办/任务、看待办清单",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "todo"
+    },
+    {
+      "id": 360,
+      "q": "看看待办里都有啥",
+      "ref": "todo",
+      "desc": "记一条待办/任务、看待办清单",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "todo"
+    },
+    {
+      "id": 361,
+      "q": "帮我写篇今天的日记。",
+      "ref": "diary",
+      "desc": "写一篇日记、记录今天",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "diary"
+    },
+    {
+      "id": 362,
+      "q": "记录一下今天，写成日记。",
+      "ref": "diary",
+      "desc": "写一篇日记、记录今天",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "diary"
+    },
+    {
+      "id": 363,
+      "q": "今天的心情写进日记里。",
+      "ref": "diary",
+      "desc": "写一篇日记、记录今天",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "diary"
+    },
+    {
+      "id": 364,
+      "q": "我想写今天的日记。",
+      "ref": "diary",
+      "desc": "写一篇日记、记录今天",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "diary"
+    },
+    {
+      "id": 365,
+      "q": "把今天记成一篇日记吧。",
+      "ref": "diary",
+      "desc": "写一篇日记、记录今天",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "diary"
+    },
+    {
+      "id": 366,
+      "q": "今天过得咋样，帮我写篇日记。",
+      "ref": "diary",
+      "desc": "写一篇日记、记录今天",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "diary"
+    },
+    {
+      "id": 367,
+      "q": "给我写篇日记，就写今天。",
+      "ref": "diary",
+      "desc": "写一篇日记、记录今天",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "diary"
+    },
+    {
+      "id": 368,
+      "q": "记录今天的流水账，写成日记。",
+      "ref": "diary",
+      "desc": "写一篇日记、记录今天",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "diary"
+    },
+    {
+      "id": 369,
+      "q": "今天有啥值得写的？写进日记。",
+      "ref": "diary",
+      "desc": "写一篇日记、记录今天",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "diary"
+    },
+    {
+      "id": 370,
+      "q": "帮我记一下今天的感受，写成日记。",
+      "ref": "diary",
+      "desc": "写一篇日记、记录今天",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "diary"
+    },
+    {
+      "id": 371,
+      "q": "写写今天都干了啥，当日记。",
+      "ref": "diary",
+      "desc": "写一篇日记、记录今天",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "diary"
+    },
+    {
+      "id": 372,
+      "q": "今天的事记到日记里。",
+      "ref": "diary",
+      "desc": "写一篇日记、记录今天",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "diary"
+    },
+    {
+      "id": 373,
+      "q": "我想记一下今天，写成日记。",
+      "ref": "diary",
+      "desc": "写一篇日记、记录今天",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "diary"
+    },
+    {
+      "id": 374,
+      "q": "把今天写进日记里。",
+      "ref": "diary",
+      "desc": "写一篇日记、记录今天",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "diary"
+    },
+    {
+      "id": 375,
+      "q": "今天过得怎么样，记一篇日记。",
+      "ref": "diary",
+      "desc": "写一篇日记、记录今天",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "diary"
+    },
+    {
+      "id": 376,
+      "q": "帮我写今天的日记记录。",
+      "ref": "diary",
+      "desc": "写一篇日记、记录今天",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "diary"
+    },
+    {
+      "id": 377,
+      "q": "记一下今天的心情和事，写成日记。",
+      "ref": "diary",
+      "desc": "写一篇日记、记录今天",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "diary"
+    },
+    {
+      "id": 378,
+      "q": "写篇今天的日记，随便写。",
+      "ref": "diary",
+      "desc": "写一篇日记、记录今天",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "diary"
+    },
+    {
+      "id": 379,
+      "q": "今天发生了不少事，写进日记。",
+      "ref": "diary",
+      "desc": "写一篇日记、记录今天",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "diary"
+    },
+    {
+      "id": 380,
+      "q": "帮我记一下今天的日记。",
+      "ref": "diary",
+      "desc": "写一篇日记、记录今天",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "diary"
+    },
+    {
+      "id": 381,
+      "q": "来首诗吧",
+      "ref": "poetry",
+      "desc": "生成/欣赏一首诗、按主题作诗",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "poetry"
+    },
+    {
+      "id": 382,
+      "q": "写首诗给我",
+      "ref": "poetry",
+      "desc": "生成/欣赏一首诗、按主题作诗",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 15,
+      "annot2_ref": "poetry"
+    },
+    {
+      "id": 383,
+      "q": "作一首诗",
+      "ref": "poetry",
+      "desc": "生成/欣赏一首诗、按主题作诗",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "poetry"
+    },
+    {
+      "id": 384,
+      "q": "能写首诗吗",
+      "ref": "poetry",
+      "desc": "生成/欣赏一首诗、按主题作诗",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 15,
+      "annot2_ref": "poetry"
+    },
+    {
+      "id": 385,
+      "q": "以春天为题写首诗",
+      "ref": "poetry",
+      "desc": "生成/欣赏一首诗、按主题作诗",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 15,
+      "annot2_ref": "poetry"
+    },
+    {
+      "id": 386,
+      "q": "写首关于月亮的诗",
+      "ref": "poetry",
+      "desc": "生成/欣赏一首诗、按主题作诗",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "poetry"
+    },
+    {
+      "id": 387,
+      "q": "给我作首思乡的诗",
+      "ref": "poetry",
+      "desc": "生成/欣赏一首诗、按主题作诗",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "poetry"
+    },
+    {
+      "id": 388,
+      "q": "来首赞美老师的诗",
+      "ref": "poetry",
+      "desc": "生成/欣赏一首诗、按主题作诗",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "poetry"
+    },
+    {
+      "id": 389,
+      "q": "写首情诗",
+      "ref": "poetry",
+      "desc": "生成/欣赏一首诗、按主题作诗",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "poetry"
+    },
+    {
+      "id": 390,
+      "q": "帮我写首秋天的诗",
+      "ref": "poetry",
+      "desc": "生成/欣赏一首诗、按主题作诗",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "poetry"
+    },
+    {
+      "id": 391,
+      "q": "作诗一首",
+      "ref": "poetry",
+      "desc": "生成/欣赏一首诗、按主题作诗",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 15,
+      "annot2_ref": "poetry"
+    },
+    {
+      "id": 392,
+      "q": "写首小诗夸夸她",
+      "ref": "poetry",
+      "desc": "生成/欣赏一首诗、按主题作诗",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "poetry"
+    },
+    {
+      "id": 393,
+      "q": "以离别为题赋诗一首",
+      "ref": "poetry",
+      "desc": "生成/欣赏一首诗、按主题作诗",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "poetry"
+    },
+    {
+      "id": 394,
+      "q": "这首诗好在哪",
+      "ref": "poetry",
+      "desc": "生成/欣赏一首诗、按主题作诗",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "poetry"
+    },
+    {
+      "id": 395,
+      "q": "帮我赏析这首诗",
+      "ref": "poetry",
+      "desc": "生成/欣赏一首诗、按主题作诗",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "poetry"
+    },
+    {
+      "id": 396,
+      "q": "品品这首诗",
+      "ref": "poetry",
+      "desc": "生成/欣赏一首诗、按主题作诗",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "poetry"
+    },
+    {
+      "id": 397,
+      "q": "这首诗什么意思",
+      "ref": "poetry",
+      "desc": "生成/欣赏一首诗、按主题作诗",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "poetry"
+    },
+    {
+      "id": 398,
+      "q": "来首关于雪的诗",
+      "ref": "poetry",
+      "desc": "生成/欣赏一首诗、按主题作诗",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "poetry"
+    },
+    {
+      "id": 399,
+      "q": "写首夏天的诗",
+      "ref": "poetry",
+      "desc": "生成/欣赏一首诗、按主题作诗",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "poetry"
+    },
+    {
+      "id": 400,
+      "q": "这首诗美在哪",
+      "ref": "poetry",
+      "desc": "生成/欣赏一首诗、按主题作诗",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "poetry"
+    },
+    {
+      "id": 401,
+      "q": "帮我记一下今天血压",
+      "ref": "health",
+      "desc": "记录或查询健康数据（血压、体重、步数等）",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "health"
+    },
+    {
+      "id": 402,
+      "q": "我昨天走了多少步",
+      "ref": "health",
+      "desc": "记录或查询健康数据（血压、体重、步数等）",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "health"
+    },
+    {
+      "id": 403,
+      "q": "记一下体重六十五公斤",
+      "ref": "health",
+      "desc": "记录或查询健康数据（血压、体重、步数等）",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "health"
+    },
+    {
+      "id": 404,
+      "q": "查查我最近的心跳",
+      "ref": "health",
+      "desc": "记录或查询健康数据（血压、体重、步数等）",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "health"
+    },
+    {
+      "id": 405,
+      "q": "今天的步数是多少",
+      "ref": "health",
+      "desc": "记录或查询健康数据（血压、体重、步数等）",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "health"
+    },
+    {
+      "id": 406,
+      "q": "把刚才量的血压存一下",
+      "ref": "health",
+      "desc": "记录或查询健康数据（血压、体重、步数等）",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "health"
+    },
+    {
+      "id": 407,
+      "q": "我上周体重变化咋样",
+      "ref": "health",
+      "desc": "记录或查询健康数据（血压、体重、步数等）",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "health"
+    },
+    {
+      "id": 408,
+      "q": "记录一下今早的血糖",
+      "ref": "health",
+      "desc": "记录或查询健康数据（血压、体重、步数等）",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "health"
+    },
+    {
+      "id": 409,
+      "q": "我昨晚睡了几个小时",
+      "ref": "health",
+      "desc": "记录或查询健康数据（血压、体重、步数等）",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "health"
+    },
+    {
+      "id": 410,
+      "q": "查一下我昨天的睡眠",
+      "ref": "health",
+      "desc": "记录或查询健康数据（血压、体重、步数等）",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "health"
+    },
+    {
+      "id": 411,
+      "q": "记一下体温三十六度五",
+      "ref": "health",
+      "desc": "记录或查询健康数据（血压、体重、步数等）",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "health"
+    },
+    {
+      "id": 412,
+      "q": "我这周走了多少步",
+      "ref": "health",
+      "desc": "记录或查询健康数据（血压、体重、步数等）",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "health"
+    },
+    {
+      "id": 413,
+      "q": "帮我看看最近血压高不高",
+      "ref": "health",
+      "desc": "记录或查询健康数据（血压、体重、步数等）",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "health"
+    },
+    {
+      "id": 414,
+      "q": "把今天的体重记上",
+      "ref": "health",
+      "desc": "记录或查询健康数据（血压、体重、步数等）",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "health"
+    },
+    {
+      "id": 415,
+      "q": "我最近一次量血压是多少",
+      "ref": "health",
+      "desc": "记录或查询健康数据（血压、体重、步数等）",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "health"
+    },
+    {
+      "id": 416,
+      "q": "记录一下现在的心跳",
+      "ref": "health",
+      "desc": "记录或查询健康数据（血压、体重、步数等）",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "health"
+    },
+    {
+      "id": 417,
+      "q": "查查我这个月体重降了多少",
+      "ref": "health",
+      "desc": "记录或查询健康数据（血压、体重、步数等）",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "health"
+    },
+    {
+      "id": 418,
+      "q": "今天走了几步了",
+      "ref": "health",
+      "desc": "记录或查询健康数据（血压、体重、步数等）",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "health"
+    },
+    {
+      "id": 419,
+      "q": "帮我存一下血压一百二十五八十",
+      "ref": "health",
+      "desc": "记录或查询健康数据（血压、体重、步数等）",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "health"
+    },
+    {
+      "id": 420,
+      "q": "我昨天的运动步数呢",
+      "ref": "health",
+      "desc": "记录或查询健康数据（血压、体重、步数等）",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "health"
+    },
+    {
+      "id": 421,
+      "q": "帮我弄个健身计划",
+      "ref": "exercise_plan",
+      "desc": "制定锻炼/健身计划",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "exercise_plan"
+    },
+    {
+      "id": 422,
+      "q": "给我排一周锻炼安排",
+      "ref": "exercise_plan",
+      "desc": "制定锻炼/健身计划",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "exercise_plan"
+    },
+    {
+      "id": 423,
+      "q": "我想练腹肌，怎么安排？",
+      "ref": "exercise_plan",
+      "desc": "制定锻炼/健身计划",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "exercise_plan"
+    },
+    {
+      "id": 424,
+      "q": "帮我定个减脂运动计划",
+      "ref": "exercise_plan",
+      "desc": "制定锻炼/健身计划",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "exercise_plan"
+    },
+    {
+      "id": 425,
+      "q": "新手去健身房该怎么练？",
+      "ref": "exercise_plan",
+      "desc": "制定锻炼/健身计划",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "exercise_plan"
+    },
+    {
+      "id": 426,
+      "q": "给我安排每天的运动",
+      "ref": "exercise_plan",
+      "desc": "制定锻炼/健身计划",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "exercise_plan"
+    },
+    {
+      "id": 427,
+      "q": "在家怎么锻炼比较好？",
+      "ref": "exercise_plan",
+      "desc": "制定锻炼/健身计划",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "exercise_plan"
+    },
+    {
+      "id": 428,
+      "q": "帮我做个增肌训练表",
+      "ref": "exercise_plan",
+      "desc": "制定锻炼/健身计划",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "exercise_plan"
+    },
+    {
+      "id": 429,
+      "q": "我想一个月瘦下来，练什么？",
+      "ref": "exercise_plan",
+      "desc": "制定锻炼/健身计划",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "exercise_plan"
+    },
+    {
+      "id": 430,
+      "q": "给我排个跑步加力量计划",
+      "ref": "exercise_plan",
+      "desc": "制定锻炼/健身计划",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "exercise_plan"
+    },
+    {
+      "id": 431,
+      "q": "每周练几次合适，帮我定一下",
+      "ref": "exercise_plan",
+      "desc": "制定锻炼/健身计划",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 11,
+      "annot2_ref": "exercise_plan"
+    },
+    {
+      "id": 432,
+      "q": "帮我安排早上锻炼内容",
+      "ref": "exercise_plan",
+      "desc": "制定锻炼/健身计划",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "exercise_plan"
+    },
+    {
+      "id": 433,
+      "q": "我想练胸和背，怎么排？",
+      "ref": "exercise_plan",
+      "desc": "制定锻炼/健身计划",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "exercise_plan"
+    },
+    {
+      "id": 434,
+      "q": "给我弄个办公室锻炼计划",
+      "ref": "exercise_plan",
+      "desc": "制定锻炼/健身计划",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "exercise_plan"
+    },
+    {
+      "id": 435,
+      "q": "产后恢复怎么锻炼，帮我排排",
+      "ref": "exercise_plan",
+      "desc": "制定锻炼/健身计划",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "exercise_plan"
+    },
+    {
+      "id": 436,
+      "q": "帮我定个宿舍训练计划",
+      "ref": "exercise_plan",
+      "desc": "制定锻炼/健身计划",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "exercise_plan"
+    },
+    {
+      "id": 437,
+      "q": "想提高体能，给我安排安排",
+      "ref": "exercise_plan",
+      "desc": "制定锻炼/健身计划",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "exercise_plan"
+    },
+    {
+      "id": 438,
+      "q": "帮我规划下周的健身内容",
+      "ref": "exercise_plan",
+      "desc": "制定锻炼/健身计划",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "exercise_plan"
+    },
+    {
+      "id": 439,
+      "q": "我该练哪些动作，帮我列计划",
+      "ref": "exercise_plan",
+      "desc": "制定锻炼/健身计划",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "exercise_plan"
+    },
+    {
+      "id": 440,
+      "q": "给我定制一套在家瘦腿方案",
+      "ref": "exercise_plan",
+      "desc": "制定锻炼/健身计划",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "exercise_plan"
+    },
+    {
+      "id": 441,
+      "q": "这张图里写的啥？",
+      "ref": "ocr",
+      "desc": "识别图片里的文字、把图片文字转出来",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "ocr"
+    },
+    {
+      "id": 442,
+      "q": "帮我念念图上的字。",
+      "ref": "ocr",
+      "desc": "识别图片里的文字、把图片文字转出来",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "ocr"
+    },
+    {
+      "id": 443,
+      "q": "把图片里的文字提取出来。",
+      "ref": "ocr",
+      "desc": "识别图片里的文字、把图片文字转出来",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "ocr"
+    },
+    {
+      "id": 444,
+      "q": "看看这张截图上的字。",
+      "ref": "ocr",
+      "desc": "识别图片里的文字、把图片文字转出来",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 12,
+      "annot2_ref": "ocr"
+    },
+    {
+      "id": 445,
+      "q": "图上的字给我弄出来。",
+      "ref": "ocr",
+      "desc": "识别图片里的文字、把图片文字转出来",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "ocr"
+    },
+    {
+      "id": 446,
+      "q": "照片里的文字帮我打出来。",
+      "ref": "ocr",
+      "desc": "识别图片里的文字、把图片文字转出来",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "ocr"
+    },
+    {
+      "id": 447,
+      "q": "这图上写的什么字？",
+      "ref": "ocr",
+      "desc": "识别图片里的文字、把图片文字转出来",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "ocr"
+    },
+    {
+      "id": 448,
+      "q": "帮我认一下图里的字。",
+      "ref": "ocr",
+      "desc": "识别图片里的文字、把图片文字转出来",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "ocr"
+    },
+    {
+      "id": 449,
+      "q": "把这张图的文字读一下。",
+      "ref": "ocr",
+      "desc": "识别图片里的文字、把图片文字转出来",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "ocr"
+    },
+    {
+      "id": 450,
+      "q": "图片上的字是什么？",
+      "ref": "ocr",
+      "desc": "识别图片里的文字、把图片文字转出来",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "ocr"
+    },
+    {
+      "id": 451,
+      "q": "给我提取图里的文字。",
+      "ref": "ocr",
+      "desc": "识别图片里的文字、把图片文字转出来",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "ocr"
+    },
+    {
+      "id": 452,
+      "q": "这张照片上写了啥？",
+      "ref": "ocr",
+      "desc": "识别图片里的文字、把图片文字转出来",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "ocr"
+    },
+    {
+      "id": 453,
+      "q": "帮我看看图上写了什么。",
+      "ref": "ocr",
+      "desc": "识别图片里的文字、把图片文字转出来",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "ocr"
+    },
+    {
+      "id": 454,
+      "q": "把截图里的字复制出来。",
+      "ref": "ocr",
+      "desc": "识别图片里的文字、把图片文字转出来",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "ocr"
+    },
+    {
+      "id": 455,
+      "q": "念一下这张图里的字。",
+      "ref": "ocr",
+      "desc": "识别图片里的文字、把图片文字转出来",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "ocr"
+    },
+    {
+      "id": 456,
+      "q": "图里文字帮我转出来。",
+      "ref": "ocr",
+      "desc": "识别图片里的文字、把图片文字转出来",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "ocr"
+    },
+    {
+      "id": 457,
+      "q": "这张图片上有哪些字？",
+      "ref": "ocr",
+      "desc": "识别图片里的文字、把图片文字转出来",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "ocr"
+    },
+    {
+      "id": 458,
+      "q": "帮我读一下图片里的文字。",
+      "ref": "ocr",
+      "desc": "识别图片里的文字、把图片文字转出来",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 19,
+      "annot2_ref": "ocr"
+    },
+    {
+      "id": 459,
+      "q": "把照片上的字弄下来。",
+      "ref": "ocr",
+      "desc": "识别图片里的文字、把图片文字转出来",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "ocr"
+    },
+    {
+      "id": 460,
+      "q": "这截图里写的什么？",
+      "ref": "ocr",
+      "desc": "识别图片里的文字、把图片文字转出来",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "ocr"
+    },
+    {
+      "id": 461,
+      "q": "阿莫西林治什么病",
+      "ref": "medical_lookup",
+      "desc": "查药品、疾病、医学常识",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "medical_lookup"
+    },
+    {
+      "id": 462,
+      "q": "布洛芬有啥副作用",
+      "ref": "medical_lookup",
+      "desc": "查药品、疾病、医学常识",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "medical_lookup"
+    },
+    {
+      "id": 463,
+      "q": "感冒了吃什么药好",
+      "ref": "medical_lookup",
+      "desc": "查药品、疾病、医学常识",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "medical_lookup"
+    },
+    {
+      "id": 464,
+      "q": "高血压平时要注意啥",
+      "ref": "medical_lookup",
+      "desc": "查药品、疾病、医学常识",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 32,
+      "annot2_ref": "medical_lookup"
+    },
+    {
+      "id": 465,
+      "q": "糖尿病能吃什么水果",
+      "ref": "medical_lookup",
+      "desc": "查药品、疾病、医学常识",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "medical_lookup"
+    },
+    {
+      "id": 466,
+      "q": "头孢喝酒会咋样",
+      "ref": "medical_lookup",
+      "desc": "查药品、疾病、医学常识",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "medical_lookup"
+    },
+    {
+      "id": 467,
+      "q": "药过期了还能吃吗",
+      "ref": "medical_lookup",
+      "desc": "查药品、疾病、医学常识",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "medical_lookup"
+    },
+    {
+      "id": 468,
+      "q": "发烧了怎么退烧",
+      "ref": "medical_lookup",
+      "desc": "查药品、疾病、医学常识",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "medical_lookup"
+    },
+    {
+      "id": 469,
+      "q": "咳嗽老不好咋办",
+      "ref": "medical_lookup",
+      "desc": "查药品、疾病、医学常识",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "medical_lookup"
+    },
+    {
+      "id": 470,
+      "q": "胃疼是什么原因",
+      "ref": "medical_lookup",
+      "desc": "查药品、疾病、医学常识",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "medical_lookup"
+    },
+    {
+      "id": 471,
+      "q": "失眠吃什么药",
+      "ref": "medical_lookup",
+      "desc": "查药品、疾病、医学常识",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "medical_lookup"
+    },
+    {
+      "id": 472,
+      "q": "被狗咬了怎么办",
+      "ref": "medical_lookup",
+      "desc": "查药品、疾病、医学常识",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "medical_lookup"
+    },
+    {
+      "id": 473,
+      "q": "烫伤了怎么处理",
+      "ref": "medical_lookup",
+      "desc": "查药品、疾病、医学常识",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "medical_lookup"
+    },
+    {
+      "id": 474,
+      "q": "流鼻血咋止血",
+      "ref": "medical_lookup",
+      "desc": "查药品、疾病、医学常识",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "medical_lookup"
+    },
+    {
+      "id": 475,
+      "q": "孕妇感冒能吃药吗",
+      "ref": "medical_lookup",
+      "desc": "查药品、疾病、医学常识",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "medical_lookup"
+    },
+    {
+      "id": 476,
+      "q": "小孩发烧吃啥药",
+      "ref": "medical_lookup",
+      "desc": "查药品、疾病、医学常识",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "medical_lookup"
+    },
+    {
+      "id": 477,
+      "q": "哺乳期能吃药吗",
+      "ref": "medical_lookup",
+      "desc": "查药品、疾病、医学常识",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "medical_lookup"
+    },
+    {
+      "id": 478,
+      "q": "痛风不能吃啥",
+      "ref": "medical_lookup",
+      "desc": "查药品、疾病、医学常识",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "medical_lookup"
+    },
+    {
+      "id": 479,
+      "q": "乙肝会传染吗",
+      "ref": "medical_lookup",
+      "desc": "查药品、疾病、医学常识",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "medical_lookup"
+    },
+    {
+      "id": 480,
+      "q": "晕车吃什么药",
+      "ref": "medical_lookup",
+      "desc": "查药品、疾病、医学常识",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "medical_lookup"
+    },
+    {
+      "id": 481,
+      "q": "帮我给张总写封信发过去",
+      "ref": "email",
+      "desc": "写一封邮件、发邮件、查看收件箱",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "email"
+    },
+    {
+      "id": 482,
+      "q": "看看有没有新收到的信",
+      "ref": "email",
+      "desc": "写一封邮件、发邮件、查看收件箱",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "email"
+    },
+    {
+      "id": 483,
+      "q": "查一下收件箱",
+      "ref": "email",
+      "desc": "写一封邮件、发邮件、查看收件箱",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "email"
+    },
+    {
+      "id": 484,
+      "q": "给妈妈发封邮件",
+      "ref": "email",
+      "desc": "写一封邮件、发邮件、查看收件箱",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 6,
+      "annot2_ref": "email"
+    },
+    {
+      "id": 485,
+      "q": "帮我回复一下刚才那封",
+      "ref": "email",
+      "desc": "写一封邮件、发邮件、查看收件箱",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "email"
+    },
+    {
+      "id": 486,
+      "q": "写封邮件约他明天见面",
+      "ref": "email",
+      "desc": "写一封邮件、发邮件、查看收件箱",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 6,
+      "annot2_ref": "email"
+    },
+    {
+      "id": 487,
+      "q": "收件箱里有啥新消息",
+      "ref": "email",
+      "desc": "写一封邮件、发邮件、查看收件箱",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "email"
+    },
+    {
+      "id": 488,
+      "q": "把这事发邮件告诉小李",
+      "ref": "email",
+      "desc": "写一封邮件、发邮件、查看收件箱",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 6,
+      "annot2_ref": "email"
+    },
+    {
+      "id": 489,
+      "q": "看看今天谁给我写信了",
+      "ref": "email",
+      "desc": "写一封邮件、发邮件、查看收件箱",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "email"
+    },
+    {
+      "id": 490,
+      "q": "帮我写个请假邮件",
+      "ref": "email",
+      "desc": "写一封邮件、发邮件、查看收件箱",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 10,
+      "annot2_ref": "email"
+    },
+    {
+      "id": 491,
+      "q": "给客户发封邮件通知",
+      "ref": "email",
+      "desc": "写一封邮件、发邮件、查看收件箱",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 6,
+      "annot2_ref": "email"
+    },
+    {
+      "id": 492,
+      "q": "查下邮箱有没有未读的",
+      "ref": "email",
+      "desc": "写一封邮件、发邮件、查看收件箱",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 6,
+      "annot2_ref": "email"
+    },
+    {
+      "id": 493,
+      "q": "帮我发封信给王老师",
+      "ref": "email",
+      "desc": "写一封邮件、发邮件、查看收件箱",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "email"
+    },
+    {
+      "id": 494,
+      "q": "收件箱清空了吗",
+      "ref": "email",
+      "desc": "写一封邮件、发邮件、查看收件箱",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "email"
+    },
+    {
+      "id": 495,
+      "q": "看看最新那封邮件说了啥",
+      "ref": "email",
+      "desc": "写一封邮件、发邮件、查看收件箱",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 6,
+      "annot2_ref": "email"
+    },
+    {
+      "id": 496,
+      "q": "帮我写封感谢信发出去",
+      "ref": "email",
+      "desc": "写一封邮件、发邮件、查看收件箱",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "email"
+    },
+    {
+      "id": 497,
+      "q": "给团队群发个开会邮件",
+      "ref": "email",
+      "desc": "写一封邮件、发邮件、查看收件箱",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 6,
+      "annot2_ref": "email"
+    },
+    {
+      "id": 498,
+      "q": "有没有人给我发信",
+      "ref": "email",
+      "desc": "写一封邮件、发邮件、查看收件箱",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "email"
+    },
+    {
+      "id": 499,
+      "q": "打开收件箱看看",
+      "ref": "email",
+      "desc": "写一封邮件、发邮件、查看收件箱",
+      "rule_hit_before": false,
+      "rec_expo_size_before": 5,
+      "annot2_ref": "email"
+    },
+    {
+      "id": 500,
+      "q": "帮我发封邮件确认行程",
+      "ref": "email",
+      "desc": "写一封邮件、发邮件、查看收件箱",
+      "rule_hit_before": true,
+      "rec_expo_size_before": 6,
+      "annot2_ref": "email"
+    }
+  ]
+}

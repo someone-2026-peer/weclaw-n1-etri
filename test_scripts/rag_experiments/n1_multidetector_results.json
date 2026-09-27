@@ -1,0 +1,4148 @@
+{
+  "meta": {
+    "generated_at": "2026-09-27 19:20:50",
+    "base_tag": "n1-eval-v1",
+    "n_sample": 150,
+    "detectors": [
+      "primary:deepseek-v4-flash",
+      "qwen-max",
+      "glm-5"
+    ],
+    "note": "exposed(rule RECOMMENDED) 与检测器无关；跨检测器差异仅来自识别"
+  },
+  "aggregate": {
+    "primary:deepseek-v4-flash": {
+      "n_valid": 150,
+      "rec_hit_rate": {
+        "k": 147,
+        "n": 150,
+        "pct": 98.0,
+        "ci95_low": 94.3,
+        "ci95_high": 99.3
+      },
+      "exposed_rate(detector-independent)": {
+        "k": 69,
+        "n": 150,
+        "pct": 46.0,
+        "ci95_low": 38.2,
+        "ci95_high": 54.0
+      },
+      "gap_rate": {
+        "k": 78,
+        "n": 150,
+        "pct": 52.0,
+        "ci95_low": 44.1,
+        "ci95_high": 59.8
+      },
+      "rec_tools_mean": 1.9
+    },
+    "qwen-max": {
+      "n_valid": 150,
+      "rec_hit_rate": {
+        "k": 143,
+        "n": 150,
+        "pct": 95.3,
+        "ci95_low": 90.7,
+        "ci95_high": 97.7
+      },
+      "exposed_rate(detector-independent)": {
+        "k": 69,
+        "n": 150,
+        "pct": 46.0,
+        "ci95_low": 38.2,
+        "ci95_high": 54.0
+      },
+      "gap_rate": {
+        "k": 77,
+        "n": 150,
+        "pct": 51.3,
+        "ci95_low": 43.4,
+        "ci95_high": 59.2
+      },
+      "rec_tools_mean": 1.5
+    },
+    "glm-5": {
+      "n_valid": 150,
+      "rec_hit_rate": {
+        "k": 123,
+        "n": 150,
+        "pct": 82.0,
+        "ci95_low": 75.1,
+        "ci95_high": 87.3
+      },
+      "exposed_rate(detector-independent)": {
+        "k": 69,
+        "n": 150,
+        "pct": 46.0,
+        "ci95_low": 38.2,
+        "ci95_high": 54.0
+      },
+      "gap_rate": {
+        "k": 63,
+        "n": 150,
+        "pct": 42.0,
+        "ci95_low": 34.4,
+        "ci95_high": 50.0
+      },
+      "rec_tools_mean": 1.0
+    }
+  },
+  "rows": {
+    "primary:deepseek-v4-flash": [
+      {
+        "id": 1,
+        "q": "现在几点了？",
+        "ref": "datetime_tool",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 2,
+        "q": "今天星期几？",
+        "ref": "datetime_tool",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 3,
+        "q": "今天几号？",
+        "ref": "datetime_tool",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 4,
+        "q": "现在什么时间？",
+        "ref": "datetime_tool",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 5,
+        "q": "今天周几？",
+        "ref": "datetime_tool",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 6,
+        "q": "现在几点钟？",
+        "ref": "datetime_tool",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 21,
+        "q": "三加五等于几",
+        "ref": "calculator",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 22,
+        "q": "十二乘八是多少",
+        "ref": "calculator",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 23,
+        "q": "九十九除以三得多少",
+        "ref": "calculator",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 24,
+        "q": "一百减三十七等于几",
+        "ref": "calculator",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 25,
+        "q": "帮我算下五十六加四十三",
+        "ref": "calculator",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 26,
+        "q": "七十五减二十八是多少",
+        "ref": "calculator",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 41,
+        "q": "打开百度首页",
+        "ref": "browser",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 3
+      },
+      {
+        "id": 42,
+        "q": "看看微博热搜榜",
+        "ref": "browser",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 4
+      },
+      {
+        "id": 43,
+        "q": "上知乎看看热榜",
+        "ref": "browser",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 3
+      },
+      {
+        "id": 44,
+        "q": "打开淘宝看物流",
+        "ref": "browser",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 3
+      },
+      {
+        "id": 45,
+        "q": "去京东查订单",
+        "ref": "browser",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 3
+      },
+      {
+        "id": 46,
+        "q": "上小红书搜攻略",
+        "ref": "browser",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 4
+      },
+      {
+        "id": 61,
+        "q": "把这段字复制一下",
+        "ref": "clipboard",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 62,
+        "q": "帮我拷贝这句话",
+        "ref": "clipboard",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 63,
+        "q": "粘贴到这里",
+        "ref": "clipboard",
+        "rec_hit": false,
+        "exposed": false,
+        "gap": false,
+        "rec_n": 0
+      },
+      {
+        "id": 64,
+        "q": "把刚才复制的贴过来",
+        "ref": "clipboard",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 65,
+        "q": "复制这张图片",
+        "ref": "clipboard",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 66,
+        "q": "把选中的内容拷下来",
+        "ref": "clipboard",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 81,
+        "q": "提醒我十分钟后开会",
+        "ref": "notify",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 3
+      },
+      {
+        "id": 82,
+        "q": "到点了喊我一声",
+        "ref": "notify",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 4
+      },
+      {
+        "id": 83,
+        "q": "弹个提醒让我别忘带钥匙",
+        "ref": "notify",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 84,
+        "q": "五分钟后提醒我喝水",
+        "ref": "notify",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 85,
+        "q": "帮我提个醒，十分钟后出发",
+        "ref": "notify",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 3
+      },
+      {
+        "id": 86,
+        "q": "现在提醒我去拿快递",
+        "ref": "notify",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 101,
+        "q": "打开微信",
+        "ref": "app_control",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 102,
+        "q": "帮我启动计算器",
+        "ref": "app_control",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 103,
+        "q": "把浏览器关掉",
+        "ref": "app_control",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 104,
+        "q": "能打开记事本吗",
+        "ref": "app_control",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 105,
+        "q": "退出音乐播放器",
+        "ref": "app_control",
+        "rec_hit": false,
+        "exposed": false,
+        "gap": false,
+        "rec_n": 2
+      },
+      {
+        "id": 106,
+        "q": "打开画图",
+        "ref": "app_control",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 121,
+        "q": "茅台今天涨了没",
+        "ref": "stock_query",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 122,
+        "q": "比亚迪股价多少",
+        "ref": "stock_query",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 2
+      },
+      {
+        "id": 123,
+        "q": "宁德时代现在啥行情",
+        "ref": "stock_query",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 2
+      },
+      {
+        "id": 124,
+        "q": "上证指数现在多少点",
+        "ref": "stock_query",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 125,
+        "q": "腾讯今天涨还是跌",
+        "ref": "stock_query",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 3
+      },
+      {
+        "id": 126,
+        "q": "帮我看看五粮液股价",
+        "ref": "stock_query",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 141,
+        "q": "帮我查查这家公司什么来头",
+        "ref": "enterprise_query",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 4
+      },
+      {
+        "id": 142,
+        "q": "这家公司靠谱不",
+        "ref": "enterprise_query",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 3
+      },
+      {
+        "id": 143,
+        "q": "查一下这家公司的底细",
+        "ref": "enterprise_query",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 3
+      },
+      {
+        "id": 144,
+        "q": "这公司是谁开的",
+        "ref": "enterprise_query",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 3
+      },
+      {
+        "id": 145,
+        "q": "公司老板是谁呀",
+        "ref": "enterprise_query",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 4
+      },
+      {
+        "id": 146,
+        "q": "这家公司负责人是谁",
+        "ref": "enterprise_query",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 3
+      },
+      {
+        "id": 161,
+        "q": "哔哩哔哩上搜红烧肉教程",
+        "ref": "bilibili_search",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 162,
+        "q": "去哔哩哔哩找个搞笑视频",
+        "ref": "bilibili_search",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 2
+      },
+      {
+        "id": 163,
+        "q": "哔哩哔哩有没有钢琴教学",
+        "ref": "bilibili_search",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 164,
+        "q": "帮我搜下哔哩哔哩的猫咪",
+        "ref": "bilibili_search",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 165,
+        "q": "哔哩哔哩上找纪录片看",
+        "ref": "bilibili_search",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 2
+      },
+      {
+        "id": 166,
+        "q": "搜哔哩哔哩的露营视频",
+        "ref": "bilibili_search",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 181,
+        "q": "电脑变慢了，帮我看看",
+        "ref": "pc_maintenance",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 3
+      },
+      {
+        "id": 182,
+        "q": "清理一下电脑垃圾",
+        "ref": "pc_maintenance",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 2
+      },
+      {
+        "id": 183,
+        "q": "电脑卡得不行，弄弄",
+        "ref": "pc_maintenance",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 3
+      },
+      {
+        "id": 184,
+        "q": "给电脑做个体检",
+        "ref": "pc_maintenance",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 2
+      },
+      {
+        "id": 185,
+        "q": "系统垃圾太多，清一清",
+        "ref": "pc_maintenance",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 2
+      },
+      {
+        "id": 186,
+        "q": "电脑反应好慢，优化下",
+        "ref": "pc_maintenance",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 3
+      },
+      {
+        "id": 201,
+        "q": "看看上个月拍的全家福",
+        "ref": "family_album",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 3
+      },
+      {
+        "id": 202,
+        "q": "把宝宝的照片整理一下",
+        "ref": "family_album",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 3
+      },
+      {
+        "id": 203,
+        "q": "找找去年过年的合影",
+        "ref": "family_album",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 4
+      },
+      {
+        "id": 204,
+        "q": "删掉重复的照片",
+        "ref": "family_album",
+        "rec_hit": false,
+        "exposed": false,
+        "gap": false,
+        "rec_n": 3
+      },
+      {
+        "id": 205,
+        "q": "把这张照片放进家庭相册",
+        "ref": "family_album",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 206,
+        "q": "爷爷奶奶的照片在哪儿",
+        "ref": "family_album",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 3
+      },
+      {
+        "id": 221,
+        "q": "鲁迅的百科看一下",
+        "ref": "baike_lookup",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 222,
+        "q": "帮我查查爱因斯坦百科",
+        "ref": "baike_lookup",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 223,
+        "q": "量子力学百科是什么",
+        "ref": "baike_lookup",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 224,
+        "q": "孔子百科翻一下",
+        "ref": "baike_lookup",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 225,
+        "q": "查查秦始皇的百科",
+        "ref": "baike_lookup",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 226,
+        "q": "黑洞百科有吗",
+        "ref": "baike_lookup",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 2
+      },
+      {
+        "id": 241,
+        "q": "今天天气怎么样？",
+        "ref": "weather",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 242,
+        "q": "外面下雨了吗？",
+        "ref": "weather",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 243,
+        "q": "需要带伞吗？",
+        "ref": "weather",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 244,
+        "q": "今天气温多少？",
+        "ref": "weather",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 245,
+        "q": "明天会下雨吗？",
+        "ref": "weather",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 246,
+        "q": "现在外面多少度？",
+        "ref": "weather",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 261,
+        "q": "放首歌听听",
+        "ref": "music_player",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 2
+      },
+      {
+        "id": 262,
+        "q": "来点音乐",
+        "ref": "music_player",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 2
+      },
+      {
+        "id": 263,
+        "q": "给我放首歌",
+        "ref": "music_player",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 2
+      },
+      {
+        "id": 264,
+        "q": "我想听周杰伦的歌",
+        "ref": "music_player",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 265,
+        "q": "能放首轻音乐吗",
+        "ref": "music_player",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 3
+      },
+      {
+        "id": 266,
+        "q": "播放稻香",
+        "ref": "music_player",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 281,
+        "q": "打开收音机",
+        "ref": "listen_radio",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 282,
+        "q": "想听广播",
+        "ref": "listen_radio",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 283,
+        "q": "放个电台听听",
+        "ref": "listen_radio",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 284,
+        "q": "帮我调个电台",
+        "ref": "listen_radio",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 285,
+        "q": "听听交通广播",
+        "ref": "listen_radio",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 286,
+        "q": "调到新闻台",
+        "ref": "listen_radio",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 301,
+        "q": "看电视直播",
+        "ref": "watch_tv",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 302,
+        "q": "我想看电视直播",
+        "ref": "watch_tv",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 303,
+        "q": "帮我打开电视直播",
+        "ref": "watch_tv",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 304,
+        "q": "放个电视直播看看",
+        "ref": "watch_tv",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 305,
+        "q": "调出电视直播",
+        "ref": "watch_tv",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 306,
+        "q": "看中央一台",
+        "ref": "watch_tv",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 321,
+        "q": "今天做什么菜好？",
+        "ref": "recipe_library",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 322,
+        "q": "红烧肉怎么做？",
+        "ref": "recipe_library",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 323,
+        "q": "番茄炒蛋咋做？",
+        "ref": "recipe_library",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 3
+      },
+      {
+        "id": 324,
+        "q": "来个家常菜谱。",
+        "ref": "recipe_library",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 325,
+        "q": "晚饭做什么菜？",
+        "ref": "recipe_library",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 326,
+        "q": "清蒸鱼怎么做？",
+        "ref": "recipe_library",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 341,
+        "q": "帮我记个待办",
+        "ref": "todo",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 342,
+        "q": "加一条任务",
+        "ref": "todo",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 2
+      },
+      {
+        "id": 343,
+        "q": "待办清单给我看看",
+        "ref": "todo",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 2
+      },
+      {
+        "id": 344,
+        "q": "我还有什么没完成",
+        "ref": "todo",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 3
+      },
+      {
+        "id": 345,
+        "q": "记个待办：下午买牛奶",
+        "ref": "todo",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 2
+      },
+      {
+        "id": 346,
+        "q": "把这个加到待办里",
+        "ref": "todo",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 361,
+        "q": "帮我写篇今天的日记。",
+        "ref": "diary",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 2
+      },
+      {
+        "id": 362,
+        "q": "记录一下今天，写成日记。",
+        "ref": "diary",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 2
+      },
+      {
+        "id": 363,
+        "q": "今天的心情写进日记里。",
+        "ref": "diary",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 2
+      },
+      {
+        "id": 364,
+        "q": "我想写今天的日记。",
+        "ref": "diary",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 2
+      },
+      {
+        "id": 365,
+        "q": "把今天记成一篇日记吧。",
+        "ref": "diary",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 2
+      },
+      {
+        "id": 366,
+        "q": "今天过得咋样，帮我写篇日记。",
+        "ref": "diary",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 2
+      },
+      {
+        "id": 381,
+        "q": "来首诗吧",
+        "ref": "poetry",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 382,
+        "q": "写首诗给我",
+        "ref": "poetry",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 383,
+        "q": "作一首诗",
+        "ref": "poetry",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 3
+      },
+      {
+        "id": 384,
+        "q": "能写首诗吗",
+        "ref": "poetry",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 385,
+        "q": "以春天为题写首诗",
+        "ref": "poetry",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 386,
+        "q": "写首关于月亮的诗",
+        "ref": "poetry",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 401,
+        "q": "帮我记一下今天血压",
+        "ref": "health",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 2
+      },
+      {
+        "id": 402,
+        "q": "我昨天走了多少步",
+        "ref": "health",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 3
+      },
+      {
+        "id": 403,
+        "q": "记一下体重六十五公斤",
+        "ref": "health",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 404,
+        "q": "查查我最近的心跳",
+        "ref": "health",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 405,
+        "q": "今天的步数是多少",
+        "ref": "health",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 406,
+        "q": "把刚才量的血压存一下",
+        "ref": "health",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 421,
+        "q": "帮我弄个健身计划",
+        "ref": "exercise_plan",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 4
+      },
+      {
+        "id": 422,
+        "q": "给我排一周锻炼安排",
+        "ref": "exercise_plan",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 2
+      },
+      {
+        "id": 423,
+        "q": "我想练腹肌，怎么安排？",
+        "ref": "exercise_plan",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 5
+      },
+      {
+        "id": 424,
+        "q": "帮我定个减脂运动计划",
+        "ref": "exercise_plan",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 4
+      },
+      {
+        "id": 425,
+        "q": "新手去健身房该怎么练？",
+        "ref": "exercise_plan",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 3
+      },
+      {
+        "id": 426,
+        "q": "给我安排每天的运动",
+        "ref": "exercise_plan",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 4
+      },
+      {
+        "id": 441,
+        "q": "这张图里写的啥？",
+        "ref": "ocr",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 442,
+        "q": "帮我念念图上的字。",
+        "ref": "ocr",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 3
+      },
+      {
+        "id": 443,
+        "q": "把图片里的文字提取出来。",
+        "ref": "ocr",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 3
+      },
+      {
+        "id": 444,
+        "q": "看看这张截图上的字。",
+        "ref": "ocr",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 445,
+        "q": "图上的字给我弄出来。",
+        "ref": "ocr",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 446,
+        "q": "照片里的文字帮我打出来。",
+        "ref": "ocr",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 461,
+        "q": "阿莫西林治什么病",
+        "ref": "medical_lookup",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 3
+      },
+      {
+        "id": 462,
+        "q": "布洛芬有啥副作用",
+        "ref": "medical_lookup",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 2
+      },
+      {
+        "id": 463,
+        "q": "感冒了吃什么药好",
+        "ref": "medical_lookup",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 464,
+        "q": "高血压平时要注意啥",
+        "ref": "medical_lookup",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 465,
+        "q": "糖尿病能吃什么水果",
+        "ref": "medical_lookup",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 3
+      },
+      {
+        "id": 466,
+        "q": "头孢喝酒会咋样",
+        "ref": "medical_lookup",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 3
+      },
+      {
+        "id": 481,
+        "q": "帮我给张总写封信发过去",
+        "ref": "email",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 482,
+        "q": "看看有没有新收到的信",
+        "ref": "email",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 483,
+        "q": "查一下收件箱",
+        "ref": "email",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 484,
+        "q": "给妈妈发封邮件",
+        "ref": "email",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 2
+      },
+      {
+        "id": 485,
+        "q": "帮我回复一下刚才那封",
+        "ref": "email",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 3
+      },
+      {
+        "id": 486,
+        "q": "写封邮件约他明天见面",
+        "ref": "email",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 2
+      }
+    ],
+    "qwen-max": [
+      {
+        "id": 1,
+        "q": "现在几点了？",
+        "ref": "datetime_tool",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 2,
+        "q": "今天星期几？",
+        "ref": "datetime_tool",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 3,
+        "q": "今天几号？",
+        "ref": "datetime_tool",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 4,
+        "q": "现在什么时间？",
+        "ref": "datetime_tool",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 5,
+        "q": "今天周几？",
+        "ref": "datetime_tool",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 6,
+        "q": "现在几点钟？",
+        "ref": "datetime_tool",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 21,
+        "q": "三加五等于几",
+        "ref": "calculator",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 22,
+        "q": "十二乘八是多少",
+        "ref": "calculator",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 23,
+        "q": "九十九除以三得多少",
+        "ref": "calculator",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 24,
+        "q": "一百减三十七等于几",
+        "ref": "calculator",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 25,
+        "q": "帮我算下五十六加四十三",
+        "ref": "calculator",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 26,
+        "q": "七十五减二十八是多少",
+        "ref": "calculator",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 41,
+        "q": "打开百度首页",
+        "ref": "browser",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 42,
+        "q": "看看微博热搜榜",
+        "ref": "browser",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 3
+      },
+      {
+        "id": 43,
+        "q": "上知乎看看热榜",
+        "ref": "browser",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 44,
+        "q": "打开淘宝看物流",
+        "ref": "browser",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 45,
+        "q": "去京东查订单",
+        "ref": "browser",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 3
+      },
+      {
+        "id": 46,
+        "q": "上小红书搜攻略",
+        "ref": "browser",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 3
+      },
+      {
+        "id": 61,
+        "q": "把这段字复制一下",
+        "ref": "clipboard",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 62,
+        "q": "帮我拷贝这句话",
+        "ref": "clipboard",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 63,
+        "q": "粘贴到这里",
+        "ref": "clipboard",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 64,
+        "q": "把刚才复制的贴过来",
+        "ref": "clipboard",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 65,
+        "q": "复制这张图片",
+        "ref": "clipboard",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 66,
+        "q": "把选中的内容拷下来",
+        "ref": "clipboard",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 81,
+        "q": "提醒我十分钟后开会",
+        "ref": "notify",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 3
+      },
+      {
+        "id": 82,
+        "q": "到点了喊我一声",
+        "ref": "notify",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 3
+      },
+      {
+        "id": 83,
+        "q": "弹个提醒让我别忘带钥匙",
+        "ref": "notify",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 84,
+        "q": "五分钟后提醒我喝水",
+        "ref": "notify",
+        "rec_hit": false,
+        "exposed": false,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 85,
+        "q": "帮我提个醒，十分钟后出发",
+        "ref": "notify",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 3
+      },
+      {
+        "id": 86,
+        "q": "现在提醒我去拿快递",
+        "ref": "notify",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 101,
+        "q": "打开微信",
+        "ref": "app_control",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 102,
+        "q": "帮我启动计算器",
+        "ref": "app_control",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 103,
+        "q": "把浏览器关掉",
+        "ref": "app_control",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 104,
+        "q": "能打开记事本吗",
+        "ref": "app_control",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 105,
+        "q": "退出音乐播放器",
+        "ref": "app_control",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 106,
+        "q": "打开画图",
+        "ref": "app_control",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 2
+      },
+      {
+        "id": 121,
+        "q": "茅台今天涨了没",
+        "ref": "stock_query",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 122,
+        "q": "比亚迪股价多少",
+        "ref": "stock_query",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 123,
+        "q": "宁德时代现在啥行情",
+        "ref": "stock_query",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 124,
+        "q": "上证指数现在多少点",
+        "ref": "stock_query",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 125,
+        "q": "腾讯今天涨还是跌",
+        "ref": "stock_query",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 126,
+        "q": "帮我看看五粮液股价",
+        "ref": "stock_query",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 141,
+        "q": "帮我查查这家公司什么来头",
+        "ref": "enterprise_query",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 3
+      },
+      {
+        "id": 142,
+        "q": "这家公司靠谱不",
+        "ref": "enterprise_query",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 143,
+        "q": "查一下这家公司的底细",
+        "ref": "enterprise_query",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 3
+      },
+      {
+        "id": 144,
+        "q": "这公司是谁开的",
+        "ref": "enterprise_query",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 145,
+        "q": "公司老板是谁呀",
+        "ref": "enterprise_query",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 146,
+        "q": "这家公司负责人是谁",
+        "ref": "enterprise_query",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 3
+      },
+      {
+        "id": 161,
+        "q": "哔哩哔哩上搜红烧肉教程",
+        "ref": "bilibili_search",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 162,
+        "q": "去哔哩哔哩找个搞笑视频",
+        "ref": "bilibili_search",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 163,
+        "q": "哔哩哔哩有没有钢琴教学",
+        "ref": "bilibili_search",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 164,
+        "q": "帮我搜下哔哩哔哩的猫咪",
+        "ref": "bilibili_search",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 165,
+        "q": "哔哩哔哩上找纪录片看",
+        "ref": "bilibili_search",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 166,
+        "q": "搜哔哩哔哩的露营视频",
+        "ref": "bilibili_search",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 181,
+        "q": "电脑变慢了，帮我看看",
+        "ref": "pc_maintenance",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 182,
+        "q": "清理一下电脑垃圾",
+        "ref": "pc_maintenance",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 183,
+        "q": "电脑卡得不行，弄弄",
+        "ref": "pc_maintenance",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 184,
+        "q": "给电脑做个体检",
+        "ref": "pc_maintenance",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 2
+      },
+      {
+        "id": 185,
+        "q": "系统垃圾太多，清一清",
+        "ref": "pc_maintenance",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 186,
+        "q": "电脑反应好慢，优化下",
+        "ref": "pc_maintenance",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 201,
+        "q": "看看上个月拍的全家福",
+        "ref": "family_album",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 202,
+        "q": "把宝宝的照片整理一下",
+        "ref": "family_album",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 3
+      },
+      {
+        "id": 203,
+        "q": "找找去年过年的合影",
+        "ref": "family_album",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 4
+      },
+      {
+        "id": 204,
+        "q": "删掉重复的照片",
+        "ref": "family_album",
+        "rec_hit": false,
+        "exposed": false,
+        "gap": false,
+        "rec_n": 3
+      },
+      {
+        "id": 205,
+        "q": "把这张照片放进家庭相册",
+        "ref": "family_album",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 206,
+        "q": "爷爷奶奶的照片在哪儿",
+        "ref": "family_album",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 3
+      },
+      {
+        "id": 221,
+        "q": "鲁迅的百科看一下",
+        "ref": "baike_lookup",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 222,
+        "q": "帮我查查爱因斯坦百科",
+        "ref": "baike_lookup",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 223,
+        "q": "量子力学百科是什么",
+        "ref": "baike_lookup",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 2
+      },
+      {
+        "id": 224,
+        "q": "孔子百科翻一下",
+        "ref": "baike_lookup",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 225,
+        "q": "查查秦始皇的百科",
+        "ref": "baike_lookup",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 2
+      },
+      {
+        "id": 226,
+        "q": "黑洞百科有吗",
+        "ref": "baike_lookup",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 241,
+        "q": "今天天气怎么样？",
+        "ref": "weather",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 242,
+        "q": "外面下雨了吗？",
+        "ref": "weather",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 243,
+        "q": "需要带伞吗？",
+        "ref": "weather",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 244,
+        "q": "今天气温多少？",
+        "ref": "weather",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 245,
+        "q": "明天会下雨吗？",
+        "ref": "weather",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 246,
+        "q": "现在外面多少度？",
+        "ref": "weather",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 261,
+        "q": "放首歌听听",
+        "ref": "music_player",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 262,
+        "q": "来点音乐",
+        "ref": "music_player",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 263,
+        "q": "给我放首歌",
+        "ref": "music_player",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 264,
+        "q": "我想听周杰伦的歌",
+        "ref": "music_player",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 265,
+        "q": "能放首轻音乐吗",
+        "ref": "music_player",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 2
+      },
+      {
+        "id": 266,
+        "q": "播放稻香",
+        "ref": "music_player",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 281,
+        "q": "打开收音机",
+        "ref": "listen_radio",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 282,
+        "q": "想听广播",
+        "ref": "listen_radio",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 283,
+        "q": "放个电台听听",
+        "ref": "listen_radio",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 284,
+        "q": "帮我调个电台",
+        "ref": "listen_radio",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 285,
+        "q": "听听交通广播",
+        "ref": "listen_radio",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 286,
+        "q": "调到新闻台",
+        "ref": "listen_radio",
+        "rec_hit": false,
+        "exposed": false,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 301,
+        "q": "看电视直播",
+        "ref": "watch_tv",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 302,
+        "q": "我想看电视直播",
+        "ref": "watch_tv",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 303,
+        "q": "帮我打开电视直播",
+        "ref": "watch_tv",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 304,
+        "q": "放个电视直播看看",
+        "ref": "watch_tv",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 305,
+        "q": "调出电视直播",
+        "ref": "watch_tv",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 306,
+        "q": "看中央一台",
+        "ref": "watch_tv",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 321,
+        "q": "今天做什么菜好？",
+        "ref": "recipe_library",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 322,
+        "q": "红烧肉怎么做？",
+        "ref": "recipe_library",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 323,
+        "q": "番茄炒蛋咋做？",
+        "ref": "recipe_library",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 324,
+        "q": "来个家常菜谱。",
+        "ref": "recipe_library",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 325,
+        "q": "晚饭做什么菜？",
+        "ref": "recipe_library",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 326,
+        "q": "清蒸鱼怎么做？",
+        "ref": "recipe_library",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 341,
+        "q": "帮我记个待办",
+        "ref": "todo",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 342,
+        "q": "加一条任务",
+        "ref": "todo",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 2
+      },
+      {
+        "id": 343,
+        "q": "待办清单给我看看",
+        "ref": "todo",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 344,
+        "q": "我还有什么没完成",
+        "ref": "todo",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 2
+      },
+      {
+        "id": 345,
+        "q": "记个待办：下午买牛奶",
+        "ref": "todo",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 346,
+        "q": "把这个加到待办里",
+        "ref": "todo",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 361,
+        "q": "帮我写篇今天的日记。",
+        "ref": "diary",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 3
+      },
+      {
+        "id": 362,
+        "q": "记录一下今天，写成日记。",
+        "ref": "diary",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 363,
+        "q": "今天的心情写进日记里。",
+        "ref": "diary",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 364,
+        "q": "我想写今天的日记。",
+        "ref": "diary",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 3
+      },
+      {
+        "id": 365,
+        "q": "把今天记成一篇日记吧。",
+        "ref": "diary",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 366,
+        "q": "今天过得咋样，帮我写篇日记。",
+        "ref": "diary",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 3
+      },
+      {
+        "id": 381,
+        "q": "来首诗吧",
+        "ref": "poetry",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 382,
+        "q": "写首诗给我",
+        "ref": "poetry",
+        "rec_hit": false,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 0
+      },
+      {
+        "id": 383,
+        "q": "作一首诗",
+        "ref": "poetry",
+        "rec_hit": false,
+        "exposed": false,
+        "gap": false,
+        "rec_n": 0
+      },
+      {
+        "id": 384,
+        "q": "能写首诗吗",
+        "ref": "poetry",
+        "rec_hit": false,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 0
+      },
+      {
+        "id": 385,
+        "q": "以春天为题写首诗",
+        "ref": "poetry",
+        "rec_hit": false,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 0
+      },
+      {
+        "id": 386,
+        "q": "写首关于月亮的诗",
+        "ref": "poetry",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 401,
+        "q": "帮我记一下今天血压",
+        "ref": "health",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 402,
+        "q": "我昨天走了多少步",
+        "ref": "health",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 403,
+        "q": "记一下体重六十五公斤",
+        "ref": "health",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 404,
+        "q": "查查我最近的心跳",
+        "ref": "health",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 405,
+        "q": "今天的步数是多少",
+        "ref": "health",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 406,
+        "q": "把刚才量的血压存一下",
+        "ref": "health",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 421,
+        "q": "帮我弄个健身计划",
+        "ref": "exercise_plan",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 3
+      },
+      {
+        "id": 422,
+        "q": "给我排一周锻炼安排",
+        "ref": "exercise_plan",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 423,
+        "q": "我想练腹肌，怎么安排？",
+        "ref": "exercise_plan",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 3
+      },
+      {
+        "id": 424,
+        "q": "帮我定个减脂运动计划",
+        "ref": "exercise_plan",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 2
+      },
+      {
+        "id": 425,
+        "q": "新手去健身房该怎么练？",
+        "ref": "exercise_plan",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 2
+      },
+      {
+        "id": 426,
+        "q": "给我安排每天的运动",
+        "ref": "exercise_plan",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 441,
+        "q": "这张图里写的啥？",
+        "ref": "ocr",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 442,
+        "q": "帮我念念图上的字。",
+        "ref": "ocr",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 443,
+        "q": "把图片里的文字提取出来。",
+        "ref": "ocr",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 444,
+        "q": "看看这张截图上的字。",
+        "ref": "ocr",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 445,
+        "q": "图上的字给我弄出来。",
+        "ref": "ocr",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 3
+      },
+      {
+        "id": 446,
+        "q": "照片里的文字帮我打出来。",
+        "ref": "ocr",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 461,
+        "q": "阿莫西林治什么病",
+        "ref": "medical_lookup",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 462,
+        "q": "布洛芬有啥副作用",
+        "ref": "medical_lookup",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 2
+      },
+      {
+        "id": 463,
+        "q": "感冒了吃什么药好",
+        "ref": "medical_lookup",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 464,
+        "q": "高血压平时要注意啥",
+        "ref": "medical_lookup",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 3
+      },
+      {
+        "id": 465,
+        "q": "糖尿病能吃什么水果",
+        "ref": "medical_lookup",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 3
+      },
+      {
+        "id": 466,
+        "q": "头孢喝酒会咋样",
+        "ref": "medical_lookup",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 481,
+        "q": "帮我给张总写封信发过去",
+        "ref": "email",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 482,
+        "q": "看看有没有新收到的信",
+        "ref": "email",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 483,
+        "q": "查一下收件箱",
+        "ref": "email",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 484,
+        "q": "给妈妈发封邮件",
+        "ref": "email",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 485,
+        "q": "帮我回复一下刚才那封",
+        "ref": "email",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 486,
+        "q": "写封邮件约他明天见面",
+        "ref": "email",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 2
+      }
+    ],
+    "glm-5": [
+      {
+        "id": 1,
+        "q": "现在几点了？",
+        "ref": "datetime_tool",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 2,
+        "q": "今天星期几？",
+        "ref": "datetime_tool",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 3,
+        "q": "今天几号？",
+        "ref": "datetime_tool",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 4,
+        "q": "现在什么时间？",
+        "ref": "datetime_tool",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 5,
+        "q": "今天周几？",
+        "ref": "datetime_tool",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 6,
+        "q": "现在几点钟？",
+        "ref": "datetime_tool",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 21,
+        "q": "三加五等于几",
+        "ref": "calculator",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 22,
+        "q": "十二乘八是多少",
+        "ref": "calculator",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 23,
+        "q": "九十九除以三得多少",
+        "ref": "calculator",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 24,
+        "q": "一百减三十七等于几",
+        "ref": "calculator",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 25,
+        "q": "帮我算下五十六加四十三",
+        "ref": "calculator",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 26,
+        "q": "七十五减二十八是多少",
+        "ref": "calculator",
+        "rec_hit": false,
+        "exposed": false,
+        "gap": false,
+        "rec_n": 0
+      },
+      {
+        "id": 41,
+        "q": "打开百度首页",
+        "ref": "browser",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 42,
+        "q": "看看微博热搜榜",
+        "ref": "browser",
+        "rec_hit": false,
+        "exposed": false,
+        "gap": false,
+        "rec_n": 0
+      },
+      {
+        "id": 43,
+        "q": "上知乎看看热榜",
+        "ref": "browser",
+        "rec_hit": false,
+        "exposed": false,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 44,
+        "q": "打开淘宝看物流",
+        "ref": "browser",
+        "rec_hit": false,
+        "exposed": false,
+        "gap": false,
+        "rec_n": 0
+      },
+      {
+        "id": 45,
+        "q": "去京东查订单",
+        "ref": "browser",
+        "rec_hit": false,
+        "exposed": false,
+        "gap": false,
+        "rec_n": 0
+      },
+      {
+        "id": 46,
+        "q": "上小红书搜攻略",
+        "ref": "browser",
+        "rec_hit": false,
+        "exposed": false,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 61,
+        "q": "把这段字复制一下",
+        "ref": "clipboard",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 62,
+        "q": "帮我拷贝这句话",
+        "ref": "clipboard",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 63,
+        "q": "粘贴到这里",
+        "ref": "clipboard",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 64,
+        "q": "把刚才复制的贴过来",
+        "ref": "clipboard",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 65,
+        "q": "复制这张图片",
+        "ref": "clipboard",
+        "rec_hit": false,
+        "exposed": false,
+        "gap": false,
+        "rec_n": 0
+      },
+      {
+        "id": 66,
+        "q": "把选中的内容拷下来",
+        "ref": "clipboard",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 81,
+        "q": "提醒我十分钟后开会",
+        "ref": "notify",
+        "rec_hit": false,
+        "exposed": false,
+        "gap": false,
+        "rec_n": 0
+      },
+      {
+        "id": 82,
+        "q": "到点了喊我一声",
+        "ref": "notify",
+        "rec_hit": false,
+        "exposed": false,
+        "gap": false,
+        "rec_n": 0
+      },
+      {
+        "id": 83,
+        "q": "弹个提醒让我别忘带钥匙",
+        "ref": "notify",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 84,
+        "q": "五分钟后提醒我喝水",
+        "ref": "notify",
+        "rec_hit": false,
+        "exposed": false,
+        "gap": false,
+        "rec_n": 0
+      },
+      {
+        "id": 85,
+        "q": "帮我提个醒，十分钟后出发",
+        "ref": "notify",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 86,
+        "q": "现在提醒我去拿快递",
+        "ref": "notify",
+        "rec_hit": false,
+        "exposed": false,
+        "gap": false,
+        "rec_n": 0
+      },
+      {
+        "id": 101,
+        "q": "打开微信",
+        "ref": "app_control",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 102,
+        "q": "帮我启动计算器",
+        "ref": "app_control",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 103,
+        "q": "把浏览器关掉",
+        "ref": "app_control",
+        "rec_hit": false,
+        "exposed": false,
+        "gap": false,
+        "rec_n": 0
+      },
+      {
+        "id": 104,
+        "q": "能打开记事本吗",
+        "ref": "app_control",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 105,
+        "q": "退出音乐播放器",
+        "ref": "app_control",
+        "rec_hit": false,
+        "exposed": false,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 106,
+        "q": "打开画图",
+        "ref": "app_control",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 121,
+        "q": "茅台今天涨了没",
+        "ref": "stock_query",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 122,
+        "q": "比亚迪股价多少",
+        "ref": "stock_query",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 123,
+        "q": "宁德时代现在啥行情",
+        "ref": "stock_query",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 124,
+        "q": "上证指数现在多少点",
+        "ref": "stock_query",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 125,
+        "q": "腾讯今天涨还是跌",
+        "ref": "stock_query",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 126,
+        "q": "帮我看看五粮液股价",
+        "ref": "stock_query",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 141,
+        "q": "帮我查查这家公司什么来头",
+        "ref": "enterprise_query",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 3
+      },
+      {
+        "id": 142,
+        "q": "这家公司靠谱不",
+        "ref": "enterprise_query",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 143,
+        "q": "查一下这家公司的底细",
+        "ref": "enterprise_query",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 3
+      },
+      {
+        "id": 144,
+        "q": "这公司是谁开的",
+        "ref": "enterprise_query",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 145,
+        "q": "公司老板是谁呀",
+        "ref": "enterprise_query",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 146,
+        "q": "这家公司负责人是谁",
+        "ref": "enterprise_query",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 161,
+        "q": "哔哩哔哩上搜红烧肉教程",
+        "ref": "bilibili_search",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 162,
+        "q": "去哔哩哔哩找个搞笑视频",
+        "ref": "bilibili_search",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 163,
+        "q": "哔哩哔哩有没有钢琴教学",
+        "ref": "bilibili_search",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 164,
+        "q": "帮我搜下哔哩哔哩的猫咪",
+        "ref": "bilibili_search",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 165,
+        "q": "哔哩哔哩上找纪录片看",
+        "ref": "bilibili_search",
+        "rec_hit": false,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 0
+      },
+      {
+        "id": 166,
+        "q": "搜哔哩哔哩的露营视频",
+        "ref": "bilibili_search",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 181,
+        "q": "电脑变慢了，帮我看看",
+        "ref": "pc_maintenance",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 182,
+        "q": "清理一下电脑垃圾",
+        "ref": "pc_maintenance",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 183,
+        "q": "电脑卡得不行，弄弄",
+        "ref": "pc_maintenance",
+        "rec_hit": false,
+        "exposed": false,
+        "gap": false,
+        "rec_n": 0
+      },
+      {
+        "id": 184,
+        "q": "给电脑做个体检",
+        "ref": "pc_maintenance",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 2
+      },
+      {
+        "id": 185,
+        "q": "系统垃圾太多，清一清",
+        "ref": "pc_maintenance",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 186,
+        "q": "电脑反应好慢，优化下",
+        "ref": "pc_maintenance",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 201,
+        "q": "看看上个月拍的全家福",
+        "ref": "family_album",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 202,
+        "q": "把宝宝的照片整理一下",
+        "ref": "family_album",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 2
+      },
+      {
+        "id": 203,
+        "q": "找找去年过年的合影",
+        "ref": "family_album",
+        "rec_hit": false,
+        "exposed": false,
+        "gap": false,
+        "rec_n": 0
+      },
+      {
+        "id": 204,
+        "q": "删掉重复的照片",
+        "ref": "family_album",
+        "rec_hit": false,
+        "exposed": false,
+        "gap": false,
+        "rec_n": 2
+      },
+      {
+        "id": 205,
+        "q": "把这张照片放进家庭相册",
+        "ref": "family_album",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 206,
+        "q": "爷爷奶奶的照片在哪儿",
+        "ref": "family_album",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 3
+      },
+      {
+        "id": 221,
+        "q": "鲁迅的百科看一下",
+        "ref": "baike_lookup",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 222,
+        "q": "帮我查查爱因斯坦百科",
+        "ref": "baike_lookup",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 223,
+        "q": "量子力学百科是什么",
+        "ref": "baike_lookup",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 2
+      },
+      {
+        "id": 224,
+        "q": "孔子百科翻一下",
+        "ref": "baike_lookup",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 225,
+        "q": "查查秦始皇的百科",
+        "ref": "baike_lookup",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 226,
+        "q": "黑洞百科有吗",
+        "ref": "baike_lookup",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 241,
+        "q": "今天天气怎么样？",
+        "ref": "weather",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 242,
+        "q": "外面下雨了吗？",
+        "ref": "weather",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 243,
+        "q": "需要带伞吗？",
+        "ref": "weather",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 244,
+        "q": "今天气温多少？",
+        "ref": "weather",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 245,
+        "q": "明天会下雨吗？",
+        "ref": "weather",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 246,
+        "q": "现在外面多少度？",
+        "ref": "weather",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 261,
+        "q": "放首歌听听",
+        "ref": "music_player",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 262,
+        "q": "来点音乐",
+        "ref": "music_player",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 263,
+        "q": "给我放首歌",
+        "ref": "music_player",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 264,
+        "q": "我想听周杰伦的歌",
+        "ref": "music_player",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 265,
+        "q": "能放首轻音乐吗",
+        "ref": "music_player",
+        "rec_hit": false,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 0
+      },
+      {
+        "id": 266,
+        "q": "播放稻香",
+        "ref": "music_player",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 281,
+        "q": "打开收音机",
+        "ref": "listen_radio",
+        "rec_hit": false,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 0
+      },
+      {
+        "id": 282,
+        "q": "想听广播",
+        "ref": "listen_radio",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 283,
+        "q": "放个电台听听",
+        "ref": "listen_radio",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 284,
+        "q": "帮我调个电台",
+        "ref": "listen_radio",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 285,
+        "q": "听听交通广播",
+        "ref": "listen_radio",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 286,
+        "q": "调到新闻台",
+        "ref": "listen_radio",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 301,
+        "q": "看电视直播",
+        "ref": "watch_tv",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 302,
+        "q": "我想看电视直播",
+        "ref": "watch_tv",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 303,
+        "q": "帮我打开电视直播",
+        "ref": "watch_tv",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 304,
+        "q": "放个电视直播看看",
+        "ref": "watch_tv",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 305,
+        "q": "调出电视直播",
+        "ref": "watch_tv",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 306,
+        "q": "看中央一台",
+        "ref": "watch_tv",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 321,
+        "q": "今天做什么菜好？",
+        "ref": "recipe_library",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 322,
+        "q": "红烧肉怎么做？",
+        "ref": "recipe_library",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 323,
+        "q": "番茄炒蛋咋做？",
+        "ref": "recipe_library",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 324,
+        "q": "来个家常菜谱。",
+        "ref": "recipe_library",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 325,
+        "q": "晚饭做什么菜？",
+        "ref": "recipe_library",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 326,
+        "q": "清蒸鱼怎么做？",
+        "ref": "recipe_library",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 341,
+        "q": "帮我记个待办",
+        "ref": "todo",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 342,
+        "q": "加一条任务",
+        "ref": "todo",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 2
+      },
+      {
+        "id": 343,
+        "q": "待办清单给我看看",
+        "ref": "todo",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 344,
+        "q": "我还有什么没完成",
+        "ref": "todo",
+        "rec_hit": false,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 0
+      },
+      {
+        "id": 345,
+        "q": "记个待办：下午买牛奶",
+        "ref": "todo",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 346,
+        "q": "把这个加到待办里",
+        "ref": "todo",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 361,
+        "q": "帮我写篇今天的日记。",
+        "ref": "diary",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 362,
+        "q": "记录一下今天，写成日记。",
+        "ref": "diary",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 363,
+        "q": "今天的心情写进日记里。",
+        "ref": "diary",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 364,
+        "q": "我想写今天的日记。",
+        "ref": "diary",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 2
+      },
+      {
+        "id": 365,
+        "q": "把今天记成一篇日记吧。",
+        "ref": "diary",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 2
+      },
+      {
+        "id": 366,
+        "q": "今天过得咋样，帮我写篇日记。",
+        "ref": "diary",
+        "rec_hit": false,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 0
+      },
+      {
+        "id": 381,
+        "q": "来首诗吧",
+        "ref": "poetry",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 382,
+        "q": "写首诗给我",
+        "ref": "poetry",
+        "rec_hit": false,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 0
+      },
+      {
+        "id": 383,
+        "q": "作一首诗",
+        "ref": "poetry",
+        "rec_hit": false,
+        "exposed": false,
+        "gap": false,
+        "rec_n": 0
+      },
+      {
+        "id": 384,
+        "q": "能写首诗吗",
+        "ref": "poetry",
+        "rec_hit": false,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 0
+      },
+      {
+        "id": 385,
+        "q": "以春天为题写首诗",
+        "ref": "poetry",
+        "rec_hit": false,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 0
+      },
+      {
+        "id": 386,
+        "q": "写首关于月亮的诗",
+        "ref": "poetry",
+        "rec_hit": false,
+        "exposed": false,
+        "gap": false,
+        "rec_n": 0
+      },
+      {
+        "id": 401,
+        "q": "帮我记一下今天血压",
+        "ref": "health",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 402,
+        "q": "我昨天走了多少步",
+        "ref": "health",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 403,
+        "q": "记一下体重六十五公斤",
+        "ref": "health",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 404,
+        "q": "查查我最近的心跳",
+        "ref": "health",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 405,
+        "q": "今天的步数是多少",
+        "ref": "health",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 406,
+        "q": "把刚才量的血压存一下",
+        "ref": "health",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 421,
+        "q": "帮我弄个健身计划",
+        "ref": "exercise_plan",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 422,
+        "q": "给我排一周锻炼安排",
+        "ref": "exercise_plan",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 423,
+        "q": "我想练腹肌，怎么安排？",
+        "ref": "exercise_plan",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 424,
+        "q": "帮我定个减脂运动计划",
+        "ref": "exercise_plan",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 425,
+        "q": "新手去健身房该怎么练？",
+        "ref": "exercise_plan",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 2
+      },
+      {
+        "id": 426,
+        "q": "给我安排每天的运动",
+        "ref": "exercise_plan",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 441,
+        "q": "这张图里写的啥？",
+        "ref": "ocr",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 442,
+        "q": "帮我念念图上的字。",
+        "ref": "ocr",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 443,
+        "q": "把图片里的文字提取出来。",
+        "ref": "ocr",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 444,
+        "q": "看看这张截图上的字。",
+        "ref": "ocr",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 445,
+        "q": "图上的字给我弄出来。",
+        "ref": "ocr",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 446,
+        "q": "照片里的文字帮我打出来。",
+        "ref": "ocr",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 461,
+        "q": "阿莫西林治什么病",
+        "ref": "medical_lookup",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 462,
+        "q": "布洛芬有啥副作用",
+        "ref": "medical_lookup",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 463,
+        "q": "感冒了吃什么药好",
+        "ref": "medical_lookup",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 464,
+        "q": "高血压平时要注意啥",
+        "ref": "medical_lookup",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 465,
+        "q": "糖尿病能吃什么水果",
+        "ref": "medical_lookup",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 466,
+        "q": "头孢喝酒会咋样",
+        "ref": "medical_lookup",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 481,
+        "q": "帮我给张总写封信发过去",
+        "ref": "email",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 2
+      },
+      {
+        "id": 482,
+        "q": "看看有没有新收到的信",
+        "ref": "email",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 483,
+        "q": "查一下收件箱",
+        "ref": "email",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 484,
+        "q": "给妈妈发封邮件",
+        "ref": "email",
+        "rec_hit": true,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 1
+      },
+      {
+        "id": 485,
+        "q": "帮我回复一下刚才那封",
+        "ref": "email",
+        "rec_hit": true,
+        "exposed": false,
+        "gap": true,
+        "rec_n": 1
+      },
+      {
+        "id": 486,
+        "q": "写封邮件约他明天见面",
+        "ref": "email",
+        "rec_hit": false,
+        "exposed": true,
+        "gap": false,
+        "rec_n": 0
+      }
+    ]
+  }
+}

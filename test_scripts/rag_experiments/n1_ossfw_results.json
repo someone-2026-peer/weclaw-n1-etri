@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "generated_at": "2026-09-27 18:02:28",
+    "base_tag": "n1-eval-v1",
+    "n": 500,
+    "recognition_source": "round2_real_deepseek",
+    "deterministic": true,
+    "thesis": "GAP 由两阶段解耦(识别未并入暴露)产生, 与框架无关; 合并即闭合"
+  },
+  "adapters": {
+    "LangGraphRouter(intent-allowlist) | merge=off": {
+      "n": 500,
+      "rec_hit_rate_pct": 98.2,
+      "coverage_rate_pct": 42.2,
+      "coverage_ci95": [
+        37.9,
+        46.6
+      ],
+      "gap_rate_pct": 56.2,
+      "gap_ci95": [
+        51.8,
+        60.5
+      ],
+      "gap_count": 281,
+      "exposure_mean": 12.1
+    },
+    "LangGraphRouter(intent-allowlist) | merge=on": {
+      "n": 500,
+      "rec_hit_rate_pct": 98.2,
+      "coverage_rate_pct": 98.4,
+      "coverage_ci95": [
+        96.9,
+        99.2
+      ],
+      "gap_rate_pct": 0.0,
+      "gap_ci95": [
+        0.0,
+        0.8
+      ],
+      "gap_count": 0,
+      "exposure_mean": 13.1
+    },
+    "AutoGPTFullBind(all-tools) | merge=off": {
+      "n": 500,
+      "rec_hit_rate_pct": 98.2,
+      "coverage_rate_pct": 100.0,
+      "coverage_ci95": [
+        99.2,
+        100.0
+      ],
+      "gap_rate_pct": 0.0,
+      "gap_ci95": [
+        0.0,
+        0.8
+      ],
+      "gap_count": 0,
+      "exposure_mean": 125.0
+    },
+    "AutoGPTFullBind(all-tools) | merge=on": {
+      "n": 500,
+      "rec_hit_rate_pct": 98.2,
+      "coverage_rate_pct": 100.0,
+      "coverage_ci95": [
+        99.2,
+        100.0
+      ],
+      "gap_rate_pct": 0.0,
+      "gap_ci95": [
+        0.0,
+        0.8
+      ],
+      "gap_count": 0,
+      "exposure_mean": 125.0
+    },
+    "RetrieverTopK(langchain/llama-index style) | merge=off": {
+      "n": 500,
+      "rec_hit_rate_pct": 98.2,
+      "coverage_rate_pct": 69.2,
+      "coverage_ci95": [
+        65.0,
+        73.1
+      ],
+      "gap_rate_pct": 30.6,
+      "gap_ci95": [
+        26.7,
+        34.8
+      ],
+      "gap_count": 153,
+      "exposure_mean": 15.2
+    },
+    "RetrieverTopK(langchain/llama-index style) | merge=on": {
+      "n": 500,
+      "rec_hit_rate_pct": 98.2,
+      "coverage_rate_pct": 99.8,
+      "coverage_ci95": [
+        98.9,
+        100.0
+      ],
+      "gap_rate_pct": 0.0,
+      "gap_ci95": [
+        0.0,
+        0.8
+      ],
+      "gap_count": 0,
+      "exposure_mean": 15.8
+    }
+  }
+}

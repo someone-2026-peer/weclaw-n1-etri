@@ -1,0 +1,22 @@
+================================================================================================
+N1 · E1 多检测器复制（样本 n=150, 分层）· gap 跨模型稳健性
+检测器: ['primary:deepseek-v4-flash', 'qwen-max', 'glm-5']
+================================================================================================
+
+[primary:deepseek-v4-flash]
+  rec_hit_rate                             147/150 = 98.0%  Wilson95%CI[94.3, 99.3]
+  exposed_rate(detector-independent)       69/150 = 46.0%  Wilson95%CI[38.2, 54.0]
+  gap_rate                                 78/150 = 52.0%  Wilson95%CI[44.1, 59.8]
+  推荐集均值大小=1.9
+
+[qwen-max]
+  rec_hit_rate                             143/150 = 95.3%  Wilson95%CI[90.7, 97.7]
+  exposed_rate(detector-independent)       69/150 = 46.0%  Wilson95%CI[38.2, 54.0]
+  gap_rate                                 77/150 = 51.3%  Wilson95%CI[43.4, 59.2]
+  推荐集均值大小=1.5
+
+[glm-5]
+  rec_hit_rate                             123/150 = 82.0%  Wilson95%CI[75.1, 87.3]
+  exposed_rate(detector-independent)       69/150 = 46.0%  Wilson95%CI[38.2, 54.0]
+  gap_rate                                 63/150 = 42.0%  Wilson95%CI[34.4, 50.0]
+  推荐集均值大小=1.0

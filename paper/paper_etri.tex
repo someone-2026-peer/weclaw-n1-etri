@@ -1,0 +1,57 @@
+% =====================================================================
+% N1 · The Recognition-Exposure Gap — ETRI Journal submission (Wiley NJD v5)
+% ---------------------------------------------------------------------
+% Double-blind review manuscript. Class = WileyNJDv5 with the AMS option
+% (inline numeric [N] citations, ETRI's mandated style), STIX2COL two-column
+% layout. Engine: XeLaTeX (STIX via fontspec) + xeCJK (Chinese seed queries).
+% Citations are literal [N] markers in citation-appearance order; the numbered
+% list lives in references_list.tex (auto-formatted from references_anon.bib).
+% Anonymity: no real names/emails/affiliations; self-cites are "Anonymous"
+% (refs [5],[20]); identity strings are absent from source and PDF metadata.
+% Build: xelatex paper_etri ; xelatex
+% =====================================================================
+\documentclass[AMS,STIX2COL]{WileyNJDv5}
+
+\usepackage{xeCJK}
+\setCJKmainfont{Microsoft YaHei}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{url}
+
+\articletype{Article}
+\received{DD Month YYYY}
+\revised{DD Month YYYY}
+\accepted{DD Month YYYY}
+\journal{ETRI Journal}
+\volume{00}
+\copyyear{2026}
+\startpage{1}
+
+\begin{document}
+
+\title{The Recognition-Exposure Gap: Why Upgrading Intent Detection Can Reduce Tool Availability in LLM Agents}
+\author{Anonymous Author(s)}
+\authormark{Anonymous Author(s)}
+\titlemark{THE RECOGNITION-EXPOSURE GAP}
+\address{Anonymous affiliation withheld for double-blind review}
+\corres{Correspondence concerning this manuscript should be directed to the handling editor as part of the double-blind review process.}
+
+\abstract[Abstract]{Tool-rich LLM agents gate tool visibility by intent-detection confidence, exposing a narrow set when confident, a broad set otherwise---assumed monotone in detector quality. We report a counterintuitive failure. In a production desktop agent (WeClaw, 125 tools), an LLM detector raised recommendation accuracy to 98.2\% (491/500 queries, ground truth fixed by construction) yet \emph{lowered} exposure coverage to 42.2\%: in 56.2\% of cases the correct tool was named but never entered the function-calling schema. We name this the \textbf{Recognition-Exposure Gap}: two decoupled stages---confidence-to-tier mapping and exposure-set construction---that a confidence-shifting upgrade leaves desynchronized, dropping recognized tools. A deterministic replay and a live run quantify the cost: 788 failed round-trips, 499 escalations, 3.7$\times$ exposure inflation, and 2.6$\times$ per-query latency. A zero-training fix that merges recognized tools into the exposure set closes the gap (reachability 42.2\%$\rightarrow$98.4\%) and lowers exposure. The condition is defined detector- and framework-independently; we support this with blind second annotation ($\kappa=0.987$), three-detector replication, and open-source reproduction.}
+
+\keywords{tool exposure; LLM agents; function calling; intent detection; agent harness}
+
+\maketitle
+
+\input{paper_body_etri}
+
+\section*{Reproducibility Statement}
+All quantitative results are produced by the unmodified production code paths of the studied desktop agent---\texttt{\_determine\_tier}, \texttt{\_get\_tool\_names\_for\_tier}, \texttt{report\_failure}, \texttt{\_upgrade\_tier}, and the \texttt{\_augment\_with\_llm\_recommended} fix---on a fixed source snapshot (git tag \texttt{n1-eval-v1}). The 500 evaluation queries, their by-construction ground-truth \texttt{ref} tools, the escalation threshold (2), and the deterministic-replay latency proxy (1,950\,ms) are fully specified in Section~5. The offline counterfactual (round2) is a real LLM measurement over all 500 queries with Wilson 95\% CIs; the deterministic escalation-ladder replay (round3) is \emph{deterministic}, injecting round2's measured recommendation so exposure construction and escalation reproduce exactly at zero API cost; a separate \emph{live} run re-calls the LLM every round and measures wall-clock. Recognition labels are cross-checked by blind second annotation (Cohen's $\kappa=0.987$), replicated across three heterogeneous detectors, and reproduced inside three open-source exposure strategies. Per-run artifacts (queries, labels, and all outputs) are released in the anonymized repository.
+
+\section*{Data and Code Availability}
+The studied agent is open source. For the duration of the double-blind review, the tool-exposure engine, both intent detectors, the replay harness, and the round0--round3 evaluation artifacts (seed queries, labels, and per-run outputs) are available in an anonymized repository at \url{https://anonymous.4open.science/r/weclaw-anon}. Data that could reveal local user identity, credentials, or private runtime paths has been excluded or normalized before release.
+
+\input{references_list}
+
+\end{document}

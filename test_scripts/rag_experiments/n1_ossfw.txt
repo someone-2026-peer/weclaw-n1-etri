@@ -1,0 +1,16 @@
+====================================================================================================
+N1 · P1-1 开源框架两阶段解耦最小复现（n=500, 确定性）
+识别信号复用 round2 真实 deepseek 推荐; 三种常见暴露策略原型 × merge on/off
+====================================================================================================
+  adapter | merge                                  rec_hit%      覆盖%    GAP%        GAP_CI95     暴露均值
+  --------------------------------------------------------------------------------------------------
+  LangGraphRouter(intent-allowlist) | merge=off        98.2     42.2    56.2  51.8,60.5          12.1
+  LangGraphRouter(intent-allowlist) | merge=on         98.2     98.4     0.0  0.0,0.8           13.1
+  AutoGPTFullBind(all-tools) | merge=off               98.2    100.0     0.0  0.0,0.8          125.0
+  AutoGPTFullBind(all-tools) | merge=on                98.2    100.0     0.0  0.0,0.8          125.0
+  RetrieverTopK(langchain/llama-index style) | merge=off     98.2     69.2    30.6  26.7,34.8          15.2
+  RetrieverTopK(langchain/llama-index style) | merge=on     98.2     99.8     0.0  0.0,0.8           15.8
+
+  解读：intent-router(allow-list, merge off) 复现 GAP（识别对了却未并入暴露）；
+  同策略 merge on 后 GAP→~0；all-tools 无 GAP 但暴露≈全量(上下文成本)；retriever 介于之间。
+  ⇒ 只要识别与暴露解耦且不合并, 任一框架都复现; 合并 co-design 即闭合。
