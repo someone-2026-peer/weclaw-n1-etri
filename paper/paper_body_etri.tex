@@ -166,7 +166,7 @@ Table~\ref{tab:chains} shows representative trigger chains from the before arm. 
 \label{fig:trigger_chain}
 \end{figure*}
 
-\textbf{5.4 Floor ablation (round0/round1).} A separate ablation (Figure~\ref{fig:floor}) isolates the extended-tool floor of the \texttt{FULL} tier. Removing the floor causes \textbf{50\%} of ambiguous queries to miss a high-frequency tool on the first attempt in the \texttt{FULL} tier (e.g., datetime, calculator, browser); back-filling colloquial keywords into tool descriptions drops the escalation trigger rate from \textbf{50\% $\rightarrow$ 0\%} and retrieval zero-hits from 4/20 $\rightarrow$ 1/20. Thus, this confirms the gap's mechanism is about \emph{which tools enter the constructed set}, and that the failure condition is not specific to the LLM detector---any confidence distribution that lands ambiguous queries in a narrow tier without the recommended tools reproduces it.
+\textbf{5.4 Floor ablation (round0/round1).} A separate ablation (Fig.~\ref{fig:floor}) isolates the extended-tool floor of the \texttt{FULL} tier. Removing the floor causes \textbf{50\%} of ambiguous queries to miss a high-frequency tool on the first attempt in the \texttt{FULL} tier (e.g., datetime, calculator, browser); back-filling colloquial keywords into tool descriptions drops the escalation trigger rate from \textbf{50\% $\rightarrow$ 0\%} and retrieval zero-hits from 4/20 $\rightarrow$ 1/20. Thus, this confirms the gap's mechanism is about \emph{which tools enter the constructed set}, and that the failure condition is not specific to the LLM detector---any confidence distribution that lands ambiguous queries in a narrow tier without the recommended tools reproduces it.
 
 \begin{figure}[t]
 \begin{center}

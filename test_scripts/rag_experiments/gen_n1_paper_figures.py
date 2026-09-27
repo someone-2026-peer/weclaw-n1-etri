@@ -58,15 +58,51 @@ DPI = 300
 
 
 def _force_font() -> None:
-    """Guarantee DejaVu Sans so ✗ ✓ ∅ ∉ ∧ ¬ ≥ → · — all render (no tofu),
-    and keep usetex off so underscores in rec_hit / _augment_... are literal."""
+    """ETRI Journal Author Checklist requires figure-internal fonts to be
+    Times New Roman 6-8 pt. STIX is a Times-compatible serif with full
+    math-glyph coverage (✗ ✓ ∅ ∉ ∧ ¬ ≥ → · —) and is already bundled
+    with our WileyNJDv5 template (Fonts/Stix/*.otf); registering it from
+    the repo keeps figures reproducible across machines with no system-
+    font dependency. Fall back to Times New Roman / DejaVu Serif when
+    the repo files are absent."""
+    from matplotlib import font_manager  # local import: keep module top clean
+    stix_dir = (
+        REPO
+        / "docs"
+        / "8 计划发布的论文papers"
+        / "weclaw_n1_recog_expo_gap_paper_20260911"
+        / "etri_submission"
+        / "Fonts"
+        / "Stix"
+    )
+    registered: list[str] = []
+    if stix_dir.exists():
+        for f in sorted(stix_dir.glob("*.otf")):
+            try:
+                font_manager.fontManager.addfont(str(f))
+                registered.append(f.name)
+            except Exception:
+                pass
     plt.rcParams.update(
         {
-            "font.family": "sans-serif",
-            "font.sans-serif": ["DejaVu Sans"],
+            "font.family": "serif",
+            "font.serif": [
+                "STIX",
+                "STIXGeneral",
+                "Times New Roman",
+                "DejaVu Serif",
+            ],
             "text.usetex": False,
         }
     )
+    try:
+        resolved = font_manager.findfont(
+            font_manager.FontProperties(family="serif"),
+            fallback_to_default=False,
+        )
+    except Exception:
+        resolved = "<fallback>"
+    print(f"[font] registered={registered or 'none'}; serif resolves to {resolved}")
 
 
 def _save(fig, name: str) -> None:
