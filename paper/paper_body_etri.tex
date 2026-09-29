@@ -73,7 +73,7 @@ The \textbf{Recognition-Exposure Gap} is the event $\texttt{rec\_hit} \wedge \ne
 \section{Experiments}
 \label{sec:exp}
 
-\textbf{5.1 Setup.} The evaluation set is 500 colloquial, ambiguous Chinese queries spanning 25 tools (up to 20 per tool; e.g., ``现在几点了'' / ``what time is it now'' $\rightarrow$ \texttt{datetime\_tool}, ``帮我算个数'' / ``help me do a calculation'' $\rightarrow$ \texttt{calculator}, ``弹个通知提醒我'' / ``pop me a notification'' $\rightarrow$ \texttt{notify}); each query's ground-truth \texttt{ref} is fixed \emph{by construction} from its seeded intent, so the label is independent of any detector. The intent LLM is \texttt{deepseek-v4-flash}, which on success returns confidence 0.9 (collapsing queries into \texttt{RECOMMENDED}). Escalation threshold = 2 (production value); for the deterministic replay the per-failed-round-trip cost proxy is 1,950\,ms (a lower bound, since a real round-trip also includes tool execution and second-pass generation), while the live run (Section~5.6) measures true wall-clock ($\sim$4.16\,s mean per round-trip). Registered tools = 125. All rates carry Wilson 95\% confidence intervals.
+\textbf{5.1 Setup.} The evaluation set is 500 colloquial, ambiguous Chinese queries spanning 25 tools (up to 20 per tool; e.g., ``what time is it now'' $\rightarrow$ \texttt{datetime\_tool}, ``help me do a calculation'' $\rightarrow$ \texttt{calculator}, ``pop me a notification'' $\rightarrow$ \texttt{notify}; English glosses of the original colloquial Chinese); each query's ground-truth \texttt{ref} is fixed \emph{by construction} from its seeded intent, so the label is independent of any detector. The intent LLM is \texttt{deepseek-v4-flash}, which on success returns confidence 0.9 (collapsing queries into \texttt{RECOMMENDED}). Escalation threshold = 2 (production value); for the deterministic replay the per-failed-round-trip cost proxy is 1,950\,ms (a lower bound, since a real round-trip also includes tool execution and second-pass generation), while the live run (Section~5.6) measures true wall-clock ($\sim$4.16\,s mean per round-trip). Registered tools = 125. All rates carry Wilson 95\% confidence intervals.
 
 \textbf{5.2 Offline counterfactual (round2).} Table~\ref{tab:offline} and Fig.~\ref{fig:recog_expo} report the recognition/exposure divergence. The LLM recommends the correct tool in 98.2\% of cases. However, fewer than half of those recommended tools are actually exposed; merging recognized tools lifts counterfactual coverage to 98.4\%.
 
@@ -145,14 +145,14 @@ Table~\ref{tab:chains} and Fig.~\ref{fig:trigger_chain} show representative trig
 \small
 \begin{tabular}{@{}p{2.15in}p{1.45in}p{2.75in}@{}}
 \toprule
-\textbf{Query (zh / en gloss)} & \textbf{\texttt{ref}} & \textbf{Trajectory} \\
+\textbf{Query (en gloss of colloquial zh)} & \textbf{\texttt{ref}} & \textbf{Trajectory} \\
 \midrule
-现在几点了 / ``what time is it now'' & \texttt{datetime\_tool} & rt1[REC, 5, $\times$] $\rightarrow$ rt2[REC, 5, $\times$] $\rightarrow$ rt3[EXT, 31, $\checkmark$] \\
-帮我算个数 / ``help me do a calculation'' & \texttt{calculator} & rt1[REC, 5, $\times$] $\rightarrow$ rt2[REC, 5, $\times$] $\rightarrow$ rt3[EXT, 31, $\checkmark$] \\
-弹个通知提醒我 / ``pop me a notification'' & \texttt{notify} & rt1[REC, 11, $\times$] $\rightarrow$ rt2[REC, 11, $\times$] $\rightarrow$ rt3[EXT, 34, $\checkmark$] \\
-查下这家公司背景 / ``look up this company's background'' & \texttt{enterprise\_query} & rt1[REC, 5, $\times$] $\rightarrow$ rt2[REC, 5, $\times$] $\rightarrow$ rt3[EXT, 31, $\checkmark$] \\
-处理个文档 / ``handle a document'' \emph{(control)} & \texttt{file} (core) & rt1[REC, 8, $\checkmark$] --- reachable first attempt in both arms \\
-搜点资料 / ``search some material'' \emph{(control)} & \texttt{search} (core) & rt1[REC, 5, $\checkmark$] --- reachable first attempt in both arms \\
+``what time is it now'' & \texttt{datetime\_tool} & rt1[REC, 5, $\times$] $\rightarrow$ rt2[REC, 5, $\times$] $\rightarrow$ rt3[EXT, 31, $\checkmark$] \\
+``help me do a calculation'' & \texttt{calculator} & rt1[REC, 5, $\times$] $\rightarrow$ rt2[REC, 5, $\times$] $\rightarrow$ rt3[EXT, 31, $\checkmark$] \\
+``pop me a notification'' & \texttt{notify} & rt1[REC, 11, $\times$] $\rightarrow$ rt2[REC, 11, $\times$] $\rightarrow$ rt3[EXT, 34, $\checkmark$] \\
+``look up this company's background'' & \texttt{enterprise\_query} & rt1[REC, 5, $\times$] $\rightarrow$ rt2[REC, 5, $\times$] $\rightarrow$ rt3[EXT, 31, $\checkmark$] \\
+``handle a document'' \emph{(control)} & \texttt{file} (core) & rt1[REC, 8, $\checkmark$] --- reachable first attempt in both arms \\
+``search some material'' \emph{(control)} & \texttt{search} (core) & rt1[REC, 5, $\checkmark$] --- reachable first attempt in both arms \\
 \bottomrule
 \end{tabular}
 \end{center}

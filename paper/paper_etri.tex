@@ -12,8 +12,12 @@
 % =====================================================================
 \documentclass[AMS,STIX2COL]{WileyNJDv5}
 
-\usepackage{xeCJK}
-\setCJKmainfont{Microsoft YaHei}
+% CJK note: xeCJK + \setCJKmainfont{Microsoft YaHei} was REMOVED (2026-09-29).
+% Microsoft YaHei is Windows-only; on Wiley's Linux build farm it is absent,
+% and xeCJK's fallback substitution bled a YaHei/Noto-like sans into the
+% first-page header block. The Chinese seed-query glyphs were replaced by
+% their English glosses (already present), so no CJK font is needed and the
+% package builds identically anywhere using only the bundled STIX .otf.
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{booktabs}
@@ -50,7 +54,7 @@
 All quantitative results are produced by the unmodified production code paths of the studied desktop agent---\texttt{\_determine\_tier}, \texttt{\_get\_tool\_names\_for\_tier}, \texttt{report\_failure}, \texttt{\_upgrade\_tier}, and the \texttt{\_augment\_with\_llm\_recommended} fix---on a fixed source snapshot (git tag \texttt{n1-eval-v1}). The 500 evaluation queries, their by-construction ground-truth \texttt{ref} tools, the escalation threshold (2), and the deterministic-replay latency proxy (1,950\,ms) are fully specified in Section~5. The offline counterfactual (round2) is a real LLM measurement over all 500 queries with Wilson 95\% CIs; the deterministic escalation-ladder replay (round3) is \emph{deterministic}, injecting round2's measured recommendation so exposure construction and escalation reproduce exactly at zero API cost; a separate \emph{live} run re-calls the LLM every round and measures wall-clock. Recognition labels are cross-checked by blind second annotation (Cohen's $\kappa=0.987$), replicated across three heterogeneous detectors, and reproduced inside three open-source exposure strategies. Per-run artifacts (queries, labels, and all outputs) are released in the anonymized repository.
 
 \section*{Data and Code Availability}
-The studied agent is open source. For the duration of the double-blind review, the tool-exposure engine, both intent detectors, the replay harness, and the round0--round3 evaluation artifacts (seed queries, labels, and per-run outputs) are available in an anonymized repository at \url{https://anonymous.4open.science/r/weclaw-anon}. Data that could reveal local user identity, credentials, or private runtime paths has been excluded or normalized before release.
+The studied agent is open source. For the duration of the double-blind review, the tool-exposure engine, both intent detectors, the replay harness, and the round0--round3 evaluation artifacts (seed queries, labels, and per-run outputs) are available in an anonymized repository at \url{https://anonymous.4open.science/r/weclaw-n1-etri-1737}. Data that could reveal local user identity, credentials, or private runtime paths has been excluded or normalized before release.
 
 \input{references_list}
 
